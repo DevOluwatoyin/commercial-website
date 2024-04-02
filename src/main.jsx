@@ -8,6 +8,7 @@ import NotFound from "./pages/not-found.jsx";
 import About from "./pages/about.jsx";
 import News from "./pages/news.jsx";
 import Contact from "./pages/contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function Pages() {
   return (
@@ -21,6 +22,7 @@ export default function Pages() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

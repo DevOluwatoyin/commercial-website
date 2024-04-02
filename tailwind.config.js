@@ -13,7 +13,7 @@ export default {
         "text-color": "#ffffff",
         primary: "#dd3333",
         "gray-sm": "#c1c1c1",
-        "bg-transparent2": "#000000e6",
+        "red-3": "#F4F2EF",
         "box-shadow": "0 2px 8px rgba(0,0,0,.1)",
         "heart-color": "#800080",
         "heart-outline": "#562a5a",

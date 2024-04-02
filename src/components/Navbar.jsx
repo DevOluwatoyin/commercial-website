@@ -53,6 +53,7 @@ const Navbar = () => {
         isScrolled ? "navbar-scroll" : ""
       }`}
     >
+      {/* <img src={Logo} alt="logo" />  */}
       <p>Logo</p>
       <div className="hidden items-center justify-between w-3/5 gap-20 md:flex">
         <ul className="w-1/2 h-full items-center justify-between flex">
@@ -61,7 +62,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="flex items-center w-1/2 gap-5">
-          <ButtonSm text="Email us" customStyle="w-1/3" />
+          <ButtonSm text="Email us" customStyle="!w-1/3" />
           <ButtonLg text="Book a free consult" customStyle="w-2/3" />
         </div>
       </div>
