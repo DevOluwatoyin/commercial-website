@@ -15,8 +15,8 @@ const NavItem = ({ items, onClick }) => {
     <li
       className={`hover:underline underline-offset-4 transition-all ${
         isActive
-          ? "text-primary underline hover:text-gray-sm"
-          : "text-black hover:text-gray-sm"
+          ? "text-primary-main underline hover:text-gray-100"
+          : "text-black hover:text-gray-100"
       }`}
     >
       <Link className="lg:text-base" to={items.path} onClick={onClick}>
