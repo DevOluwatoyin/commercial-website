@@ -13,7 +13,7 @@ const NewsLetter = () => {
             placeholder="Email"
             className="w-4/5 px-6 py-2 placeholder:text-primary-dark"
           />
-          <ButtonLg text="submit" customStyle="w-[150px]" />
+          <ButtonLg text="submit" customStyle="w-[120px]" />
         </div>
       </div>
     </section>
