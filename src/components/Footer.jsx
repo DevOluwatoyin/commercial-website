@@ -14,8 +14,8 @@ const Footer = () => {
   return (
     <section>
       <div className="bg-red-300 p-12 pb-2">
-        <div className="flex justify-between">
-          <div className="w-2/5">
+        <div className="flex flex-col gap-5 justify-between md:flex-row">
+          <div className="md:w-2/5">
             <div className="w-2/3 space-y-5">
               <Typography
                 variant="headline-l"
@@ -34,9 +34,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between w-3/5">
-            <div className="flex flex-col space-y-10 pb-4">
-              <div className="w-1/3">
+          <div className="flex flex-col gap-7 justify-between w-3/5 md:flex-row">
+            <div className="flex flex-col space-y-10 pb-4 md:w-1/3">
+              <div>
                 <Typography customClassName="uppercase mb-3">
                   Contact
                 </Typography>
@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 md:w-1/3">
               <div>
                 <Typography customClassName="mb-3 uppercase">Firm</Typography>
                 <div className="flex flex-col space-y-2 text-sm">
@@ -99,7 +99,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="md:w-1/3">
               <Typography customClassName="mb-3 uppercase">
                 Areas of Practice
               </Typography>
@@ -118,13 +118,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <small>
+        <small className="block mt-5">
           &copy; Copyright {new Date().getFullYear()} Virk Personal Injury Law
           All Rights Reserved.
         </small>
       </div>
       <div className="w-full relative h-60 bg-primary-main">
-        <p className="uppercase tracking-[20px] font-medium absolute bottom-0 right-0 text-white md:text-8xl">
+        <p className="uppercase tracking-[20px] font-medium absolute bottom-0 right-0 text-white text-5xl md:text-8xl">
           Virk
         </p>
       </div>
