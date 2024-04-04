@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Typography from "../components/Typography";
 import Partners from "../components/partners";
+import NewsLetter from "../components/Newsletter";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
           </Typography>
         </div>
       </section>
+      <NewsLetter />
       <Partners />
     </Fragment>
   );
