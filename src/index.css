@@ -9,3 +9,10 @@
   line-height: 1.5;
   font-weight: 400;
 }
+
+.delivery {
+  background-image: url("/src/assets/handshake.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}

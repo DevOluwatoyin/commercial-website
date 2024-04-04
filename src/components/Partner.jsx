@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "./Typography";
 import { partners } from "../constants/partners";
 
-const Partners = () => {
+const Partner = () => {
   return (
     <section className="bg-white flex flex-col py-20 max-w-7xl mx-auto items-center justify-between md:flex-row">
       <div className="w-2/5">
@@ -31,4 +31,4 @@ const Partners = () => {
   );
 };
 
-export default Partners;
+export default Partner;
