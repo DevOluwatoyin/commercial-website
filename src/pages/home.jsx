@@ -23,6 +23,11 @@ const Home = () => {
           </Typography>
         </div>
       </section>
+      <section className="bg-red-100 flex items-center justify-center py-20">
+        <Typography customClassName="mx-auto max-w-6xl text-center text-[120px] leading-[1.1]">
+          <q>They go above and beyond for you...</q>
+        </Typography>
+      </section>
       <NewsLetter />
       <Partners />
     </Fragment>
