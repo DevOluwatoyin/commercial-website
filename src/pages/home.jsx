@@ -7,6 +7,7 @@ import { ButtonLg } from "../components/Button";
 import Stats from "../components/Stats";
 import AreasOfExpertise from "../components/AreasOfExpertise";
 import Accommodate from "../components/Accommodate";
+import Instruction from "../components/Instruction";
 
 const Home = () => {
   return (
@@ -41,6 +42,8 @@ const Home = () => {
       />
 
       <Mission />
+
+      <Instruction />
 
       <Accommodate />
 
