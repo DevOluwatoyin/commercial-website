@@ -13,6 +13,7 @@
 .delivery {
   background-image: url("/src/assets/handshake.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
+  background-color: #1612127a;
 }
