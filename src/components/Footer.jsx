@@ -124,7 +124,7 @@ const Footer = () => {
         </small>
       </div>
       <div className="w-full relative h-60 bg-primary-main">
-        <p className="uppercase tracking-[20px] font-medium absolute bottom-0 right-0 text-white text-5xl md:text-8xl">
+        <p className="uppercase tracking-[20px] font-medium absolute bottom-3 right-0 text-white text-5xl md:text-8xl">
           Virk
         </p>
       </div>
