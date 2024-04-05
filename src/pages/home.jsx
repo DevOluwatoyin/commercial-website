@@ -4,6 +4,7 @@ import NewsLetter from "../components/Newsletter";
 import Partner from "../components/Partner";
 import Mission from "../components/Mission";
 import { ButtonLg } from "../components/Button";
+import Stats from "../components/Stats";
 
 const Home = () => {
   return (
@@ -21,13 +22,15 @@ const Home = () => {
           </Typography>
         </div>
       </section>
+      <Stats />
       <section className="bg-red-100 flex items-center justify-center py-20">
         <Typography customClassName="text-[100px] mx-auto max-w-6xl text-center md:!text-[120px] !leading-[1.1]">
           <q>They go above and beyond for you...</q>
         </Typography>
       </section>
+
       <ButtonLg
-        customStyle="w-28 h-28 !uppercase fixed right-0 top-[50%]"
+        customStyle="!w-28 !h-28 !uppercase fixed right-0 top-[50%]"
         text="contact us"
       />
       <Mission />

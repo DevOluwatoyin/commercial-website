@@ -86,7 +86,7 @@ export default {
           bg: "#C2D4FF",
           darkmode: "#1E356B",
           50: "#F9F5FF",
-          500: "#47BEBA",
+          500: "#F9F7F6",
         },
         neutral: {
           10: "#001B3C",
@@ -100,6 +100,7 @@ export default {
         },
         gray: {
           100: "#c1c1c1",
+          200: "#BFBFBF",
         },
         grayscale: {
           input: "#EFF0F7",
