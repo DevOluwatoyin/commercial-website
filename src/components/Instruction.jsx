@@ -29,7 +29,7 @@ const Instruction = () => {
 
       <div className="grid grid-cols-3 gap-20 mt-16">
         {accidentInstructions.map((each, id) => (
-          <div key={id} className="flex gap-4 items-baseline">
+          <div key={id} className="flex gap-3 items-baseline">
             <Typography fontWeight="medium" variant="title-l">
               {each.id}
             </Typography>
@@ -38,7 +38,7 @@ const Instruction = () => {
                 color="primary-dark"
                 variant="headline-s"
                 fontWeight="regular"
-                customClassName="mb-7"
+                customClassName="mb-7 max-w-[240px]"
               >
                 {each.title}
               </Typography>
