@@ -4,9 +4,9 @@ import { ButtonLg } from "./Button";
 
 const NewsLetter = () => {
   return (
-    <section className="bg-black-700 py-10 px-4">
+    <section className="bg-black-700 py-12 px-4">
       <div className="max-w-7xl mx-auto space-y-14">
-        <Typography variant="headline-m" fontWeight="regular" customClassName="text-white">Sign up for our newsletter.</Typography>
+        <Typography variant="display-s" fontWeight="regular" customClassName="text-white">Sign up for our newsletter.</Typography>
         <div className="flex items-center gap-8">
           <input
             type="text"

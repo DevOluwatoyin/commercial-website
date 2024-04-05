@@ -8,7 +8,7 @@ const Stats = () => {
     <section className="bg-primary-500">
       <div className="w-full p-4 py-10 flex flex-col gap-10 justify-between md:flex-row md:items-center md:p-20">
         <div className="space-y-5 md:w-1/2">
-          <Typography customClassName="uppercase !text-primary-light text-[11px] !tracking-widest">
+          <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
             By the numbers
           </Typography>
           <Typography

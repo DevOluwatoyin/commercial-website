@@ -5,6 +5,7 @@ import Partner from "../components/Partner";
 import Mission from "../components/Mission";
 import { ButtonLg } from "../components/Button";
 import Stats from "../components/Stats";
+import AreasOfExpertise from "../components/AreasOfExpertise";
 
 const Home = () => {
   return (
@@ -25,6 +26,8 @@ const Home = () => {
 
       <Stats />
 
+      <AreasOfExpertise />
+
       <section className="bg-red-100 flex items-center justify-center py-20">
         <Typography customClassName="!text-[90px] mx-auto max-w-6xl text-center md:!text-[120px] !leading-[1.1]">
           <q>They go above and beyond for you...</q>
@@ -39,7 +42,7 @@ const Home = () => {
       <Mission />
 
       <NewsLetter />
-      
+
       <Partner />
     </Fragment>
   );
