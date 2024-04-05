@@ -4,8 +4,8 @@ import Typography from "./Typography";
 const Mission = () => {
   return (
     <section className="delivery h-[540px]">
-      <div className="bg-[#1612127a] h-full p-20 pt-24">
-        <div className="h-full flex justify-between gap-14 max-w-6xl mx-auto">
+      <div className="bg-[#1612127a] h-full p-10 md:p-20 md:pt-24">
+        <div className="h-full flex flex-col justify-center gap-14 max-w-6xl mx-auto md:flex-row md:justify-between">
           <Typography
             customClassName="text-white"
             fontWeight="regular"
