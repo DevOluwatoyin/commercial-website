@@ -6,6 +6,7 @@ import Mission from "../components/Mission";
 import { ButtonLg } from "../components/Button";
 import Stats from "../components/Stats";
 import AreasOfExpertise from "../components/AreasOfExpertise";
+import Accommodate from "../components/Accommodate";
 
 const Home = () => {
   return (
@@ -40,6 +41,8 @@ const Home = () => {
       />
 
       <Mission />
+
+      <Accommodate />
 
       <NewsLetter />
 

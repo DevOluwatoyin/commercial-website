@@ -105,3 +105,13 @@ export const socials = [
     url: "/",
   },
 ];
+
+export const offers = [
+  "Free initial and subsequent (if necessary) consultations",
+  "Free parking",
+  "Evening and weekend appointments",
+  "Hospital and in home visits",
+  "Interpreters of any language",
+  "Wheelchair accessible",
+  "You don t pay fees unless you win",
+];

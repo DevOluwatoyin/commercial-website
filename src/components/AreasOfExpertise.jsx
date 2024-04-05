@@ -38,7 +38,7 @@ const AreasOfExpertise = () => {
               <Typography
                 key={id}
                 fontWeight="regular"
-                customClassName="!text-primary-light border-t border-t-gray-200 py-3"
+                customClassName="!text-primary-light text-title-m border-t border-t-gray-200 py-3"
               >
                 {area}
               </Typography>
