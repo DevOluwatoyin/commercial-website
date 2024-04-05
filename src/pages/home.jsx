@@ -8,26 +8,26 @@ const Home = () => {
   return (
     <Fragment>
       <section className="bg-black-700 h-screen">
-        <div className="flex !flex-col py-20 px-10 !justify-between">
+        <div className="flex !flex-col py-20 px-10 !justify-between h-screen">
           <Typography
-            customClassName="text-4xl text-white md:text-[200px] leading-[1.1]"
+            customClassName="text-[100px] text-white md:text-[200px] leading-[1.1]"
           >
             Results
           </Typography>
-          <Typography customClassName="text-4xl text-white self-center md:text-[200px] leading-[1.1]">
+          <Typography customClassName="text-[100px] text-white self-center md:text-[200px] leading-[1.1]">
             fair &
           </Typography>
-          <Typography customClassName="text-4xl text-white self-end md:text-[200px]  leading-[1.1]">
+          <Typography customClassName="text-[100px] text-white self-end md:text-[200px]  leading-[1.1]">
             square.
           </Typography>
         </div>
       </section>
       <section className="bg-red-100 flex items-center justify-center py-20">
-        <Typography customClassName="mx-auto max-w-6xl text-center !text-[120px] !leading-[1.1]">
+        <Typography customClassName="text-6xl mx-auto max-w-6xl text-center md:!text-[120px] !leading-[1.1]">
           <q>They go above and beyond for you...</q>
         </Typography>
       </section>
-      {/* <Mission /> */}
+      <Mission />
       <NewsLetter />
       <Partner />
     </Fragment>
