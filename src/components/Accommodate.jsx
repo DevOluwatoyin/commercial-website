@@ -19,11 +19,11 @@ const Accommodate = () => {
         </Typography>{" "}
         you.
       </Typography>
-      <div className="flex justify-between items-center gap-40">
-        <div className="w-1/2">
+      <div className="flex flex-col justify-between items-center gap-10 md:gap-40 md:flex-row">
+        <div className="md:w-1/2">
           <img src={AccommodateImg} alt="" className="w-full" />
         </div>
-        <div className="flex flex-col w-1/2  border-b border-b-gray-200">
+        <div className="flex flex-col border-b border-b-gray-200 md:w-1/2">
           {offers.map((offer, id) => (
             <Typography
               key={id}

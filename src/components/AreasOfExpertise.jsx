@@ -7,7 +7,7 @@ import Featured from "../assets/featured.jpg"
 const AreasOfExpertise = () => {
   return (
     <section className="px-4 md:px-20 space-y-10">
-      <div className="flex justify-between gap-5">
+      <div className="flex flex-col justify-between gap-5 md:flex-row">
         <div className="space-y-5 py-8 md:py-10">
           <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
             Areas of expertise
@@ -16,7 +16,6 @@ const AreasOfExpertise = () => {
             color="primary-dark"
             variant="headline-l"
             fontWeight="regular"
-            // customClassName=""
           >
             This is how we can
             <Typography tag="span" variant="headline-l" fontWeight="regular">
@@ -49,11 +48,11 @@ const AreasOfExpertise = () => {
           <img src={Image} alt="" />
         </div>
       </div>
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-5 items-center pb-10 justify-between md:flex-row">
         <Typography color="primary-dark" customClassName=" !text-headline-l !font-regular">
           As seen on...
         </Typography>
-        <div className="w-3/4">
+        <div className="md:w-3/4">
           <img src={Featured} alt="" className="w-full" />
         </div>
       </div>

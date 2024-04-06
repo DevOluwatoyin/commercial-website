@@ -8,7 +8,7 @@ const Instruction = () => {
       <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest mb-8">
         First Steps after an accident
       </Typography>
-      <div className="flex justify-between">
+      <div className="flex flex-col justify-between md:flex-row">
         <Typography
           color="primary-dark"
           variant="headline-l"

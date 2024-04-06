@@ -13,10 +13,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <section>
-      <div className="bg-red-100 p-12 pb-2">
+      <div className="bg-red-100 p-4 py-12 md:p-12 pb-2">
         <div className="flex flex-col gap-5 justify-between md:flex-row">
           <div className="md:w-2/5">
-            <div className="w-2/3 space-y-5">
+            <div className="md:w-2/3 space-y-5">
               <Typography
                 variant="headline-l"
                 fontWeight="medium"
