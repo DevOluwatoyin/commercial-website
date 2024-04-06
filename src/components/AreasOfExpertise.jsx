@@ -16,7 +16,6 @@ const AreasOfExpertise = () => {
             color="primary-dark"
             variant="headline-l"
             fontWeight="regular"
-            // customClassName=""
           >
             This is how we can
             <Typography tag="span" variant="headline-l" fontWeight="regular">

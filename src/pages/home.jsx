@@ -8,6 +8,7 @@ import Stats from "../components/Stats";
 import AreasOfExpertise from "../components/AreasOfExpertise";
 import Accommodate from "../components/Accommodate";
 import Instruction from "../components/Instruction";
+import Testimonies from "../components/Testimonies";
 
 const Home = () => {
   return (
@@ -35,6 +36,8 @@ const Home = () => {
           <q>They go above and beyond for you...</q>
         </Typography>
       </section>
+
+      <Testimonies />
 
       <ButtonLg
         customStyle="!w-28 !h-28 !uppercase fixed right-0 top-[50%]"
