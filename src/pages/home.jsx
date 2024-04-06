@@ -9,6 +9,7 @@ import AreasOfExpertise from "../components/AreasOfExpertise";
 import Accommodate from "../components/Accommodate";
 import Instruction from "../components/Instruction";
 import Testimonies from "../components/Testimonies";
+import Expectation from "../components/Expectation";
 
 const Home = () => {
   return (
@@ -47,6 +48,8 @@ const Home = () => {
       <Mission />
 
       <Instruction />
+
+      <Expectation />
 
       <Accommodate />
 
