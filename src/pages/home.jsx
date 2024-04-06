@@ -40,7 +40,7 @@ const Home = () => {
       <Testimonies />
 
       <ButtonLg
-        customStyle="!w-28 !h-28 !uppercase fixed right-0 top-[50%]"
+        customStyle="!w-20 !h-36 !uppercase fixed right-0 top-[50%] md:!w-28 md:!h-28"
         text="contact us"
       />
 
