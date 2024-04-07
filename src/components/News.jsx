@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
+import { newsPost } from "../constants/partners";
+import SingleNews from "./SingleNews";
+import Typography from "./Typography";
 
 const News = () => {
   return (
-    <section>
+    <section className="p-4 md:p-20">
       <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
         Latest from Virk
       </Typography>
@@ -10,16 +13,24 @@ const News = () => {
         color="primary-dark"
         variant="headline-l"
         fontWeight="regular"
-        // customClassName="md:max-w-sm mt-5"
+        customClassName="my-5"
       >
-      News
+        News
       </Typography>
 
-      <div>
-        
+      <div className="flex flex-col items-cent gap-4 md:flex-row">
+        {newsPost.map((post, id) => (
+          <SingleNews
+            key={id}
+            date={post.date}
+            heading={post.heading}
+            img={post.img}
+            title={post.title}
+          />
+        ))}
       </div>
     </section>
   );
-}
+};
 
-export default News
+export default News;

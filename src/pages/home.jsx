@@ -10,6 +10,7 @@ import Accommodate from "../components/Accommodate";
 import Instruction from "../components/Instruction";
 import Testimonies from "../components/Testimonies";
 import Expectation from "../components/Expectation";
+import News from "../components/News";
 
 const Home = () => {
   return (
@@ -51,6 +52,8 @@ const Home = () => {
 
       <Expectation />
 
+      <News />
+      
       <Accommodate />
 
       <NewsLetter />
