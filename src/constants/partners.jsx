@@ -4,6 +4,9 @@ import spinal from "../assets/spinal.jpg";
 import stJoseph from "../assets/stjoseph.png";
 import Lady from "../assets/lady.jpg";
 import Ladies from "../assets/ladies.jpg";
+import Scan from "../assets/scan.jpg";
+import Sick from "../assets/sick.jpg";
+import Film from "../assets/film.jpg";
 
 export const partners = [stJoseph, spinal, house, brain];
 
@@ -56,5 +59,27 @@ export const expectation = [
   },
   {
     name: "Virk Personal Injury Law will fund your case you don't have to pay anything until you win.",
+  },
+];
+
+export const newsPost = [
+  {
+    heading: "Motor Vehicle Accident",
+    img: Scan,
+    date: "June 12, 2023",
+    title: "What You Need To Know About Diffuse Axonal Injuries",
+  },
+  {
+    heading: "Unsafe Premises",
+    img: Sick,
+    date: "September 01, 2023",
+    title: "Everything You Need To Know About Post-Concussion Syndrome",
+  },
+  {
+    heading: "Insurance Denials",
+    img: Film,
+    date: "December 01, 2023",
+    title:
+      "The Role of Technology in Personal Injury Cases: Shaping the Future of Legal Evidence",
   },
 ];
