@@ -7,8 +7,8 @@ import { expectation } from "../constants/partners";
 const Expectations = () => {
   return (
     <section className="px-2">
-      <div className="border border-primary-main grid grid-rows-[repeat(6_minmax(0,_10px))] grid-cols-[minmax(0,_310px)] md:grid-cols-7 md:grid-rows-2 max-w-[1400px] mx-auto">
-        <div className="md:col-span-2 md:row-span-2 p-8 pb-0">
+      <div className="border border-primary-main md:grid md:grid-cols-7 md:grid-rows-2 max-w-[1400px] mx-auto">
+        <div className="md:col-span-2 md:row-span-2 p-8 md:pb-0">
           <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
             What to Expect
           </Typography>
@@ -34,7 +34,10 @@ const Expectations = () => {
           </div>
         </div>
         {expectation.map((each, id) => (
-          <div key={id} className={`border border-primary-main ${each.style}`}>
+          <div
+            key={id}
+            className={`hidden border border-primary-main md:block ${each.style}`}
+          >
             {each.name ? (
               <Typography
                 color="primary-dark"
