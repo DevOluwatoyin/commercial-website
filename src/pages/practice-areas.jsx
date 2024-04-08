@@ -47,7 +47,7 @@ representation for their unique needs."
               </div>
 
               {activeIndex === id && (
-                <div className="grid grid-cols-3 gap-4 items-center justify-between pb-3">
+                <div className="grid grid-cols-3 gap-4 items-center justify-between py-3">
                   {area.subCategories.map((subCategory, id) => (
                     <div className="flex items-center gap-2" key={id}>
                       <img src={RedDot} alt="" />
