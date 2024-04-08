@@ -39,7 +39,7 @@ const AreasOfExpertise = () => {
                 fontWeight="regular"
                 customClassName="!text-primary-light text-title-m border-t border-t-gray-200 py-3"
               >
-                {area}
+                {area.category}
               </Typography>
             ))}
           </div>

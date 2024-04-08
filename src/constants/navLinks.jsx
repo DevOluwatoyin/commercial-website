@@ -76,15 +76,102 @@ export const areasOfService = [
 ];
 
 export const areasOfPractice = [
-  "Insurance Denials",
-  "Motor Vehicle Accidents",
-  "Catastrophic Injuries",
-  "Slip and Fall Accidents",
-  "Nursing Home Negligence",
-  "Unsafe Premises",
-  "Bar and Tavern Liability",
-  "Dog Bites and Animal Attacks",
-  "Product Liability",
+  {
+    category: "Insurance Denials",
+    subCategories: ["Car Insurance", "Health Insurance"],
+  },
+  {
+    category: "Motor Vehicle Accidents",
+    subCategories: [
+      "Car Accident",
+      "Bicycle Accident",
+      "Driving Without Insurance",
+      "Trucking Accident",
+      "Wrongful and Accidental Death",
+      "Municipal Liability",
+      "Motorcycle Accident",
+      "Drunk Driving Injury",
+      "ATV, Snowmobile, and Off-Road Accident",
+      "Hit and Run",
+    ],
+  },
+  {
+    category: "Catastrophic Injuries",
+    subCategories: [
+      "Wrongful and Accidental Death",
+      "Municipal Liability",
+      "Motorcycle Accident",
+      "Drunk Driving Injury",
+      "ATV, Snowmobile, and Off-Road Accident",
+      "Hit and Run",
+    ],
+  },
+  {
+    category: "Slip and Fall Accidents",
+    subCategories: [
+      "Wrongful and Accidental Death",
+      "Municipal Liability",
+      "Motorcycle Accident",
+      "Drunk Driving Injury",
+      "ATV, Snowmobile, and Off-Road Accident",
+      "Hit and Run",
+    ],
+  },
+  {
+    category: "Nursing Home Negligence",
+    subCategories: [
+      "Wrongful and Accidental Death",
+      "Municipal Liability",
+      "Motorcycle Accident",
+      "Drunk Driving Injury",
+      "ATV, Snowmobile, and Off-Road Accident",
+      "Hit and Run",
+    ],
+  },
+  {
+    category: "Unsafe Premises",
+    subCategories: [
+      "Wrongful and Accidental Death",
+      "Municipal Liability",
+      "Motorcycle Accident",
+      "Drunk Driving Injury",
+      "ATV, Snowmobile, and Off-Road Accident",
+      "Hit and Run",
+    ],
+  },
+  {
+    category: "Bar and Tavern Liability",
+    subCategories: [
+      "Wrongful and Accidental Death",
+      "Municipal Liability",
+      "Motorcycle Accident",
+      "Drunk Driving Injury",
+      "ATV, Snowmobile, and Off-Road Accident",
+      "Hit and Run",
+    ],
+  },
+  {
+    category: "Dog Bites and Animal Attacks",
+    subCategories: [
+      "Wrongful and Accidental Death",
+      "Municipal Liability",
+      "Motorcycle Accident",
+      "Drunk Driving Injury",
+      "ATV, Snowmobile, and Off-Road Accident",
+      "Hit and Run",
+    ],
+  },
+  {
+    category: "Product Liability",
+    subCategories: [
+      "Wrongful and Accidental Death",
+      "Municipal Liability",
+      "Motorcycle Accident",
+      "Drunk Driving Injury",
+      "ATV, Snowmobile, and Off-Road Accident",
+      "Hit and Run",
+    ],
+  },
 ];
 
 export const socials = [

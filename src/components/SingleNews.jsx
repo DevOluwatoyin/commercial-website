@@ -1,5 +1,5 @@
 import React from "react";
-import NewsIcon from "../assets/news-icon.svg";
+import AddIcon from "../assets/add-icon.svg";
 import Typography from "./Typography";
 
 const SingleNews = ({ heading, img, date, title }) => {
@@ -14,7 +14,7 @@ const SingleNews = ({ heading, img, date, title }) => {
       </Typography>
       <div className="relative -z-10">
         <img src={img} alt="" className="" />
-        <img src={NewsIcon} alt="" className="absolute right-0 bottom-0" />
+        <img src={AddIcon} alt="" className="absolute right-0 bottom-0" />
       </div>
       <div>
         <Typography customClassName="!text-primary-dark !text-[10px] my-3">

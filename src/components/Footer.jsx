@@ -100,9 +100,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="md:w-1/3">
-              <Typography customClassName="mb-3 uppercase">
+              <Link to="/areas-of-practice" className="text-body-m text-primary-main mb-3 uppercase inline-block">
                 Areas of Practice
-              </Typography>
+              </Link>
               <div className="flex flex-col space-y-2">
                 {areasOfPractice.map((practice, id) => (
                   <Typography
@@ -111,7 +111,7 @@ const Footer = () => {
                     tag="span"
                     fontWeight="regular"
                   >
-                    {practice}
+                    {practice.category}
                   </Typography>
                 ))}
               </div>

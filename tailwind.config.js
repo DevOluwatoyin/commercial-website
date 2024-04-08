@@ -82,7 +82,7 @@ export default {
         primary: {
           main: "#E81D2C",
           dark: "#161212",
-          light: "#707070",
+          light: "#949494",
           bg: "#C2D4FF",
           darkmode: "#1E356B",
           50: "#F9F5FF",
