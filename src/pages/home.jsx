@@ -3,7 +3,6 @@ import Typography from "../components/Typography";
 import NewsLetter from "../components/Newsletter";
 import Partner from "../components/Partner";
 import Mission from "../components/Mission";
-import { FloatingBtn } from "../components/Button";
 import Stats from "../components/Stats";
 import AreasOfExpertise from "../components/AreasOfExpertise";
 import Accommodate from "../components/Accommodate";
@@ -40,8 +39,6 @@ const Home = () => {
       </section>
 
       <Testimonies />
-
-      <FloatingBtn />
 
       <Mission />
 

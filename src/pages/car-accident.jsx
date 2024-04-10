@@ -4,7 +4,7 @@ import RedBox from "../assets/red-box.svg";
 import ContactForm from "../components/ContactForm";
 import caret from "../assets/caret-red.svg";
 import Typography from "../components/Typography";
-import { ButtonSm, FloatingBtn } from "../components/Button";
+import { ButtonSm } from "../components/Button";
 
 const CarAccident = () => {
   return (
@@ -348,8 +348,6 @@ const CarAccident = () => {
             <ContactForm image={caret} />
           </div>
         </div>
-
-        <FloatingBtn />
       </div>
 
       <div className="flex flex-col justify-between items-center mb-20 max-w-7xl mx-auto md:flex-row">

@@ -1,8 +1,14 @@
 import React from "react";
 import AddIcon from "../assets/add-icon.svg";
 import Typography from "./Typography";
+import { useNavigate } from "react-router-dom";
 
 const SingleNews = ({ heading, img, date, title }) => {
+  const navigate = useNavigate();
+  const navigateToSingleNews = () => {
+    navigate("/news-details");
+  };
+
   return (
     <div className="flex-1">
       <Typography
@@ -24,7 +30,8 @@ const SingleNews = ({ heading, img, date, title }) => {
           color="primary-dark"
           variant="title-l"
           fontWeight="regular"
-          customClassName="capitalize"
+          customClassName="capitalize cursor-pointer hover:underline"
+          onClick={navigateToSingleNews}
         >
           {title}
         </Typography>

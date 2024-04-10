@@ -10,6 +10,7 @@ import Contact from "./pages/contact.jsx";
 import Layout from "./pages/layout.jsx";
 import PracticeAreas from "./pages/practice-areas.jsx";
 import CarAccident from "./pages/car-accident.jsx";
+import NewsDetails from "./pages/news-details.jsx";
 
 export default function Pages() {
   return (
@@ -22,6 +23,7 @@ export default function Pages() {
           <Route path="/news" element={<News />} />
           <Route path="/areas-of-practice" element={<PracticeAreas />} />
           <Route path="/car-accident" element={<CarAccident />} />
+          <Route path="/news-details" element={<NewsDetails />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
