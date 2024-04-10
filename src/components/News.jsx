@@ -18,7 +18,7 @@ const News = () => {
         News
       </Typography>
 
-      <div className="flex flex-col items-cent gap-4 md:flex-row">
+      <div className="flex flex-col gap-4 md:flex-row">
         {newsPost.map((post, id) => (
           <SingleNews
             key={id}
