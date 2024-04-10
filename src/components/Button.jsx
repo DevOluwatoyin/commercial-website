@@ -19,3 +19,12 @@ export const ButtonLg = ({ text, customStyle }) => {
     </button>
   );
 };
+
+export const FloatingBtn = () => {
+  return (
+    <ButtonLg
+      customStyle="!w-20 !text-[10px] -rotate-90 !uppercase fixed -right-5 top-[50%] md:right-0 md:!w-28 md:!h-28 md:rotate-0 md:!text-sm"
+      text="contact us"
+    />
+  );
+}

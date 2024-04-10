@@ -1,18 +1,40 @@
 import React from "react";
 import Select from "./Select";
 import { ButtonLg } from "./Button";
-import caret from "../assets/caret-red.svg";
 
-
-const ContactForm = () => {
+const ContactForm = ({ image }) => {
   return (
-    <form action="">
-      <Select image={caret} optionHeading="Office"  />
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-      <ButtonLg text="Submit" />
+    <form action="" className="space-y-8">
+      <Select
+        image={image}
+        optionHeading="Office"
+        customSelectStyle="!text-left border-primary-light !border-b !border-r"
+        customWrapperStyle="!w-full"
+      />
+      <input
+        type="text"
+        placeholder="Name*"
+        className="w-full border border-primary-light p-3 placeholder:text-primary-dark"
+      />
+      <input
+        type="text"
+        placeholder="Email*"
+        className="w-full border border-primary-light p-3 placeholder:text-primary-dark"
+      />
+      <input
+        type="text"
+        placeholder="Phone Number*"
+        className="w-full border border-primary-light p-3 placeholder:text-primary-dark"
+      />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="4"
+        placeholder="Tell us what happended...*"
+        className="w-full border border-primary-light p-3 placeholder:text-primary-dark"
+      ></textarea>
+      <ButtonLg text="Submit" customStyle="w-[100px]" />
     </form>
   );
 };

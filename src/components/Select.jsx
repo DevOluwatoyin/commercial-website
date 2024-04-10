@@ -1,9 +1,16 @@
 import React from "react";
 
-const Select = ({ image, optionHeading }) => {
+const Select = ({
+  image,
+  optionHeading,
+  customWrapperStyle,
+  customSelectStyle,
+}) => {
   return (
-    <div className="relative inline-block w-64">
-      <select className="block appearance-none w-full bg-white border border-primary-main border-r-2 border-b-2 text-xs font-medium text-center text-primary-dark py-3 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500">
+    <div className={`relative inline-block w-64 ${customWrapperStyle}`}>
+      <select
+        className={`block appearance-none w-full bg-white border border-primary-main border-r-2 border-b-2 text-xs font-medium text-center text-primary-dark py-3 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 ${customSelectStyle}`}
+      >
         <option hidden>{optionHeading}</option>
         <option>Option 1</option>
         <option>Option 2</option>

@@ -10,7 +10,6 @@ const Accommodate = () => {
         color="primary-dark"
         variant="headline-l"
         fontWeight="regular"
-        // customClassName=""
       >
         We
         <Typography tag="span" variant="headline-l" fontWeight="regular">

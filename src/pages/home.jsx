@@ -3,7 +3,7 @@ import Typography from "../components/Typography";
 import NewsLetter from "../components/Newsletter";
 import Partner from "../components/Partner";
 import Mission from "../components/Mission";
-import { ButtonLg } from "../components/Button";
+import { FloatingBtn } from "../components/Button";
 import Stats from "../components/Stats";
 import AreasOfExpertise from "../components/AreasOfExpertise";
 import Accommodate from "../components/Accommodate";
@@ -41,10 +41,7 @@ const Home = () => {
 
       <Testimonies />
 
-      <ButtonLg
-        customStyle="!w-20 !text-[10px] -rotate-90 !uppercase fixed -right-5 top-[50%] md:right-0 md:!w-28 md:!h-28 md:rotate-0 md:!text-sm"
-        text="contact us"
-      />
+      <FloatingBtn />
 
       <Mission />
 
@@ -53,7 +50,7 @@ const Home = () => {
       <Expectation />
 
       <News />
-      
+
       <Accommodate />
 
       <NewsLetter />

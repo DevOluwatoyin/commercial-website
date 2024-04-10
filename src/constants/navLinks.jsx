@@ -79,6 +79,7 @@ export const areasOfPractice = [
   {
     category: "Insurance Denials",
     subCategories: ["Car Insurance", "Health Insurance"],
+    href: "/",
   },
   {
     category: "Motor Vehicle Accidents",
@@ -94,6 +95,7 @@ export const areasOfPractice = [
       "ATV, Snowmobile, and Off-Road Accident",
       "Hit and Run",
     ],
+    href: "/car-accident",
   },
   {
     category: "Catastrophic Injuries",
@@ -105,6 +107,7 @@ export const areasOfPractice = [
       "ATV, Snowmobile, and Off-Road Accident",
       "Hit and Run",
     ],
+    href: "/",
   },
   {
     category: "Slip and Fall Accidents",
@@ -116,6 +119,7 @@ export const areasOfPractice = [
       "ATV, Snowmobile, and Off-Road Accident",
       "Hit and Run",
     ],
+    href: "/",
   },
   {
     category: "Nursing Home Negligence",
@@ -127,6 +131,7 @@ export const areasOfPractice = [
       "ATV, Snowmobile, and Off-Road Accident",
       "Hit and Run",
     ],
+    href: "/",
   },
   {
     category: "Unsafe Premises",
@@ -138,6 +143,7 @@ export const areasOfPractice = [
       "ATV, Snowmobile, and Off-Road Accident",
       "Hit and Run",
     ],
+    href: "/",
   },
   {
     category: "Bar and Tavern Liability",
@@ -149,6 +155,7 @@ export const areasOfPractice = [
       "ATV, Snowmobile, and Off-Road Accident",
       "Hit and Run",
     ],
+    href: "/",
   },
   {
     category: "Dog Bites and Animal Attacks",
@@ -160,6 +167,7 @@ export const areasOfPractice = [
       "ATV, Snowmobile, and Off-Road Accident",
       "Hit and Run",
     ],
+    href: "/",
   },
   {
     category: "Product Liability",
@@ -171,6 +179,7 @@ export const areasOfPractice = [
       "ATV, Snowmobile, and Off-Road Accident",
       "Hit and Run",
     ],
+    href: "/",
   },
 ];
 

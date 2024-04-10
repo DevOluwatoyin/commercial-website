@@ -66,6 +66,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+
             <div className="flex flex-col gap-5 md:w-1/3">
               <div>
                 <Typography customClassName="mb-3 uppercase">Firm</Typography>
@@ -99,20 +100,23 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+
             <div className="md:w-1/3">
-              <Link to="/areas-of-practice" className="text-body-m text-primary-main mb-3 uppercase inline-block">
+              <Link
+                to="/areas-of-practice"
+                className="text-body-m text-primary-main mb-3 uppercase inline-block"
+              >
                 Areas of Practice
               </Link>
               <div className="flex flex-col space-y-2">
                 {areasOfPractice.map((practice, id) => (
-                  <Typography
+                  <Link
+                    to={practice.href}
                     key={id}
-                    color="primary-dark"
-                    tag="span"
-                    fontWeight="regular"
+                    className="text-sm text-primary-dark hover:text-primary-main"
                   >
                     {practice.category}
-                  </Typography>
+                  </Link>
                 ))}
               </div>
             </div>
