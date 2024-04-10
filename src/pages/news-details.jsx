@@ -402,7 +402,7 @@ const NewsDetails = () => {
         </div>
 
         <div className="w-1/2">
-          <div className="bg-primary-light py-14 px-20">
+          <div className="bg-red-100 py-14 px-20">
             <Typography
               color="primary-dark"
               customClassName="!text-headline-m !font-regular mb-14"
