@@ -33,6 +33,7 @@ const Navbar = () => {
   };
 
   const [isScrolled, setIsScrolled] = useState(false);
+  
   useEffect(() => {
     function handleScroll() {
       if (window.scrollY > 0) {
@@ -50,7 +51,7 @@ const Navbar = () => {
   return (
     <nav
       className={`bg-bg-color z-50 w-full h-20 bg-white fixed flex justify-between items-center py-4 px-10 transition-all duration-500 ease-in-out ${
-        isScrolled ? "navbar-scroll" : ""
+        isScrolled ? "h-16 shadow-md shadow-red-100" : ""
       }`}
     >
       {/* <img src={Logo} alt="logo" />  */}
