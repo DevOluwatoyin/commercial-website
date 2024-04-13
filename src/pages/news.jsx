@@ -65,7 +65,7 @@ const News = () => {
 
           <ButtonSm
             text="Book a free consult"
-            customStyle="w-1/5 !uppercase font-medium"
+            customStyle="!w-1/5 !uppercase font-medium"
           />
         </div>
       </div>

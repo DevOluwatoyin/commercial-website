@@ -4,7 +4,7 @@ import Stars from "../assets/white-stars.svg";
 import Quote from "../assets/quote.svg";
 import Typography from "../components/Typography";
 import AboutImg from "../assets/about-img.png";
-import { reasonsToChoose } from "../constants/about";
+import { reasonsToChoose, values } from "../constants/about";
 
 const ReasonsToChoose = ({ reasons }) => {
   return (
@@ -99,11 +99,92 @@ const About = () => {
         </Typography>
 
         <div className="pt-4">
-          
-        {reasonsToChoose.map((reason, id) => (
-          <ReasonsToChoose reasons={reason} key={id} />
-        ))}
-</div>
+          {reasonsToChoose.map((reason, id) => (
+            <ReasonsToChoose reasons={reason} key={id} />
+          ))}
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto my-16 bg-primary-main py-20 px-10 flex justify-between">
+        <div className="space-y-2">
+          <Typography
+            customClassName="!text-white !text-lg"
+            fontWeight="regular"
+          >
+            Peter Balach
+          </Typography>
+          <img src={Stars} alt="star rating" />
+          <Typography
+            color=""
+            customClassName="!text-[11px] !text-white"
+            fontWeight="regular"
+          >
+            A year ago
+          </Typography>
+        </div>
+        <div className="flex w-[70%] items-start gap-3">
+          <img src={Quote} alt="Quote" className="w-16" />
+          <Typography
+            color=""
+            customClassName="!text-2xl !text-white"
+            fontWeight="regular"
+          >
+            Maecenas ullamcorper molestie venenatis. Duis dapibus mi a elementum
+            scelerisque. Quisque sit amet pulvinar neque, sit amet laoreet
+            libero. Curabitur et massa quis augue tempus euismod nec pretium
+            lorem. Ut imperdiet dui eget ligula mollis pharetra. Donec fermentum
+            pellentesque lorem sed malesuada. Nullam id euismod dui. Integer
+            pellentesque eros a elit vestibulum ullamcorper.
+          </Typography>
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto py-10">
+        <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
+          Our Values
+        </Typography>
+
+        <Typography
+          variant="headline-m"
+          fontWeight="regular"
+          customClassName="!text-white mt-5"
+        >
+          Delivering results, fair and square.
+        </Typography>
+        <Typography
+          fontWeight="regular"
+          customClassName="!text-primary-light text-[10px] mt-5 md:max-w-sm"
+        >
+          For us, integrity is more than just a word it’s the cornerstone of
+          everything we do. Grounded in our commitment to fairness and
+          transparency, our core values drive everything we do.
+        </Typography>
+
+        <div className="border border-primary-main grid grid-cols-2 md:grid-cols-4 max-w-7xl mx-auto mt-14">
+          {values.map((value, id) => (
+            <div key={id} className="border border-primary-main p-4">
+              <Typography
+                variant="title-l"
+                fontWeight="regular"
+                customClassName="p-4 pb-0 !text-white"
+              >
+                {value.value}
+              </Typography>
+              <Typography
+                fontWeight="regular"
+                customClassName="p-4 pb-0 !text-white !text-[12px]"
+              >
+                {value.desc}
+              </Typography>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="my-36">
+        <Typography customClassName="!text-[65px] px-2 !text-white text-center md:!text-[120px] !leading-[1.1]">
+          Let us help you.
+        </Typography>
       </div>
     </section>
   );

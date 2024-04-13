@@ -25,7 +25,7 @@ export const reasonsToChoose = [
   },
 ];
 
-export const Values = [
+export const values = [
   {
     value: "Excellence",
     desc: `We strive to provide top quality representation to our clients including staying up to date on the latest laws and legal strategies, having a network of highly regarded professionals to assist with aspect of the case and a willingness to go to trial`,
