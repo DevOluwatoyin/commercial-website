@@ -4,6 +4,8 @@ import closeIcon from "../assets/close.svg";
 import { Link, useLocation } from "react-router-dom";
 import { navItems } from "../constants/navLinks";
 import { ButtonLg, ButtonSm } from "./Button";
+import Logo from "../assets/logo-dark.png"
+
 
 const NavItem = ({ items, onClick }) => {
   const location = useLocation();
@@ -54,8 +56,9 @@ const DarkNavbar = () => {
         isScrolled ? "h-16 shadow-md shadow-red-100" : ""
       }`}
     >
-      {/* <img src={Logo} alt="logo" />  */}
-      <p>Logo</p>
+      <Link to="/" className="block w-28">
+        <img src={Logo} alt="logo" className="w-full" />
+      </Link>
       <div className="hidden items-center justify-between w-3/5 gap-20 md:flex">
         <ul className="w-1/2 h-full items-center justify-between flex">
           {navItems.map((items, index) => (
@@ -63,7 +66,10 @@ const DarkNavbar = () => {
           ))}
         </ul>
         <div className="flex items-center w-1/2 gap-5">
-          <ButtonSm text="Email us" customStyle="!w-1/3" />
+          <ButtonSm
+            text="Email us"
+            customStyle="!w-1/3 text-primary-main border-white"
+          />
           <ButtonLg text="Book a free consult" customStyle="w-2/3" />
         </div>
       </div>
@@ -75,7 +81,7 @@ const DarkNavbar = () => {
         )}
       </button>
       {navOpen && (
-        <div className="absolute bg-white w-full h-screen top-20 left-0 flex flex-col  items-start space-y-4 pl-4">
+        <div className="absolute bg-black-700 w-full h-screen top-20 left-0 flex flex-col items-start space-y-4 pl-4">
           <ul className="flex flex-col justify-center space-y-4">
             {navItems.map((items, index) => (
               <NavItem

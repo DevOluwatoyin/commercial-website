@@ -21,7 +21,6 @@ const Layout = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
       {useWhiteNav ? <Navbar /> : <DarkNavbar />}
       <FloatingBtn />
       <Outlet />
