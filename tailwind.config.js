@@ -101,7 +101,7 @@ export default {
         gray: {
           100: "#c1c1c1",
           200: "#BFBFBF",
-          300: "7F6B5C",
+          300: "#828282",
         },
         grayscale: {
           input: "#EFF0F7",

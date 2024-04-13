@@ -52,7 +52,7 @@ const DarkNavbar = () => {
 
   return (
     <nav
-      className={`bg-bg-color z-50 w-full h-20 bg-black-700 fixed flex justify-between items-center py-4 px-10 transition-all duration-500 ease-in-out ${
+      className={`bg-bg-color z-50 w-full h-20 bg-primary-dark fixed flex justify-between items-center py-4 px-10 transition-all duration-500 ease-in-out ${
         isScrolled ? "h-16 shadow-md shadow-red-100" : ""
       }`}
     >
@@ -81,7 +81,7 @@ const DarkNavbar = () => {
         )}
       </button>
       {navOpen && (
-        <div className="absolute bg-black-700 w-full h-screen top-20 left-0 flex flex-col items-start space-y-4 pl-4">
+        <div className="absolute bg-primary-dark w-full h-screen top-20 left-0 flex flex-col items-start space-y-4 pl-4">
           <ul className="flex flex-col justify-center space-y-4">
             {navItems.map((items, index) => (
               <NavItem
