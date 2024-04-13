@@ -26,6 +26,11 @@ export const navItems = [
   },
 ];
 
+export const routeOptions = {
+  "/about": true,
+  "/contact": true,
+};
+
 export const contactItems = [
   {
     icon: location,
