@@ -34,7 +34,7 @@ const ContactForm = ({ image }) => {
         placeholder="Tell us what happended...*"
         className="w-full border border-primary-light p-3 placeholder:text-primary-dark"
       ></textarea>
-      <ButtonLg text="Submit" customStyle="w-[100px]" />
+      <ButtonLg text="Submit" customStyle="!w-[100px]" />
     </form>
   );
 };
