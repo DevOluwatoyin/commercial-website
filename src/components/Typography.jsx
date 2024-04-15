@@ -112,7 +112,7 @@ const Typography = (props) => {
     variantClassMap[variant],
     underlineClassMap[underline],
     underlineClassMap[underline],
-    alignClassMap[align]
+    alignClassMap[align],
   );
 
   return (

@@ -8,7 +8,7 @@ import { reasonsToChoose, values } from "../constants/about";
 
 const ReasonsToChoose = ({ reasons }) => {
   return (
-    <div className="flex justify-between py-8 flex-col md:flex-row">
+    <div className="flex flex-col justify-between py-8 md:flex-row">
       <div className="w-1/2">
         <Typography
           customClassName="!text-xl !text-white w-2/3"
@@ -38,16 +38,16 @@ const ReasonsToChoose = ({ reasons }) => {
 const About = () => {
   return (
     <section className="bg-primary-dark pb-10">
-      <div className="h-screen flex items-center flex-col justify-center gap-28 pt-20">
-        <p className="text-white text-3xl text-center max-w-2xl">
+      <div className="flex h-screen flex-col items-center justify-center gap-28 pt-20">
+        <p className="max-w-2xl text-center text-3xl text-white">
           With every client, we are driven by a singular mission: to champion
           our their rights with unwavering dedication and integrity.
         </p>
         <img src={AboutTxt} alt="About" />
       </div>
 
-      <div className="flex flex-col justify-between py-8 md:flex-row max-w-6xl mx-auto md:py-14">
-        <div className="px-1 space-y-5 md:w-1/2">
+      <div className="mx-auto flex max-w-6xl flex-col justify-between py-8 md:flex-row md:py-14">
+        <div className="space-y-5 px-1 md:w-1/2">
           <Typography
             color=""
             customClassName="uppercase !text-[11px] mb-1 !text-gray-300"
@@ -73,11 +73,11 @@ const About = () => {
         </div>
 
         <div className="md:w-1/3">
-          <img src={AboutImg} className="grayscale w-full" alt="About Image" />
+          <img src={AboutImg} className="w-full grayscale" alt="About Image" />
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto max-w-6xl">
         <Typography
           customClassName="uppercase !text-[11px] mb-1 !text-gray-300"
           fontWeight="medium"
@@ -105,7 +105,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto my-16 bg-primary-main py-20 px-10 flex justify-between">
+      <div className="mx-auto my-16 flex max-w-4xl justify-between bg-primary-main px-10 py-20">
         <div className="space-y-2">
           <Typography
             customClassName="!text-white !text-lg"
@@ -139,7 +139,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto py-10">
+      <div className="mx-auto max-w-6xl py-10">
         <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
           Our Values
         </Typography>
@@ -160,7 +160,7 @@ const About = () => {
           transparency, our core values drive everything we do.
         </Typography>
 
-        <div className="border border-primary-main grid grid-cols-2 md:grid-cols-4 max-w-7xl mx-auto mt-14">
+        <div className="mx-auto mt-14 grid max-w-7xl grid-cols-2 border border-primary-main md:grid-cols-4">
           {values.map((value, id) => (
             <div key={id} className="border border-primary-main p-4">
               <Typography

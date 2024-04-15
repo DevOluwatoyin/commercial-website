@@ -6,7 +6,7 @@ import { stats } from "../constants/partners";
 const Stats = () => {
   return (
     <section className="bg-primary-500">
-      <div className="w-full p-4 py-10 flex flex-col gap-10 justify-between md:flex-row md:items-center md:p-20">
+      <div className="flex w-full flex-col justify-between gap-10 p-4 py-10 md:flex-row md:items-center md:p-20">
         <div className="space-y-5 md:w-1/2">
           <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
             By the numbers
@@ -26,18 +26,18 @@ const Stats = () => {
           </Typography>
           <div>
             <img src={StatImg} alt="" />
-            <small className="text-primary-light inline-block max-w-sm text-[9px] mt-4">
+            <small className="mt-4 inline-block max-w-sm text-[9px] text-primary-light">
               *Past results are not necessarily indicative of future results and
               the amount recovered and other litigation outcomes will vary
               according to the facts in individual cases.
             </small>
           </div>
         </div>
-        <div className="flex flex-col justify-between items-center border-t border-t-gray-200 md:items-start md:w-[30%]">
+        <div className="flex flex-col items-center justify-between border-t border-t-gray-200 md:w-[30%] md:items-start">
           {stats.map((stat, id) => (
             <div
               key={id}
-              className="border-b border-b-gray-200 py-10 space-y-3 w-full text-center flex flex-col items-center md:items-start"
+              className="flex w-full flex-col items-center space-y-3 border-b border-b-gray-200 py-10 text-center md:items-start"
             >
               <Typography
                 fontWeight="regular"

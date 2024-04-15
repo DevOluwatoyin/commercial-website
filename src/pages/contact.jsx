@@ -13,10 +13,10 @@ const Contact = () => {
         <img src={ContactImg} alt="Contact" className="grayscale" />
       </div>
 
-      <div className="max-w-7xl mx-auto border-t border-gray-300 py-4 mt-10">
+      <div className="mx-auto mt-10 max-w-7xl border-t border-gray-300 py-4">
         {contactDetails.map((contact, id) => (
           <div
-            className="grid grid-cols-[500px_400px_400px] border-b py-4 border-gray-300"
+            className="grid grid-cols-[500px_400px_400px] border-b border-gray-300 py-4"
             key={id}
           >
             <Typography
@@ -70,7 +70,7 @@ const Contact = () => {
               </Typography>
             </div>
 
-            <div className="col-end-4 col-span-2">
+            <div className="col-span-2 col-end-4">
               <Typography
                 variant="headline-l"
                 fontWeight="regular"
@@ -90,7 +90,7 @@ const Contact = () => {
         ))}
       </div>
 
-      <div className="max-w-5xl flex justify-between my-20 mx-auto">
+      <div className="mx-auto my-20 flex max-w-5xl justify-between">
         <Typography
           fontWeight="regular"
           variant="headline-m"
@@ -130,7 +130,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="bg-white p-20 flex justify-between mt-10 max-w-6xl mx-auto">
+      <div className="mx-auto mt-10 flex max-w-6xl justify-between bg-white p-20">
         <Typography
           variant="headline-l"
           color="primary-dark"

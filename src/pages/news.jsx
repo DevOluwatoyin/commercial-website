@@ -18,7 +18,7 @@ const News = () => {
         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in lorem sed arcu varius porttitor. Fusce pretium orci a mollis sollicitudin. Mauris vulputate orci eget diam dictum aliquet"
       />
 
-      <div className="max-w-7xl mx-auto px-4 my-14 md:my-20">
+      <div className="mx-auto my-14 max-w-7xl px-4 md:my-20">
         <div className="flex items-center gap-4">
           <Select image={caret} optionHeading="FILTER BY EXPERTISE" />
           <Select image={caret} optionHeading="SORT" />
@@ -46,11 +46,11 @@ const News = () => {
               ))}
             </div>
 
-            <p className="text-right mt-14 mb-10">Pagination</p>
+            <p className="mb-10 mt-14 text-right">Pagination</p>
           </div>
         </div>
 
-        <div className="flex flex-col justify-between items-center pt-24 pb-10 md:flex-row">
+        <div className="flex flex-col items-center justify-between pb-10 pt-24 md:flex-row">
           <Typography customClassName="!text-[65px] px-2 !text-primary-dark text-center md:!text-[120px] !leading-[1.1]">
             Let us
             <Typography

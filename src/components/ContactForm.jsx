@@ -8,7 +8,7 @@ const ContactForm = ({ image }) => {
       <Select
         image={image}
         optionHeading="Office"
-        customSelectStyle="!text-left border-primary-light !border-b !border-r"
+        customSelectStyle="!text-left !border-primary-light !border-b !border-r"
         customWrapperStyle="!w-full"
       />
       <input

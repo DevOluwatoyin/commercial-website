@@ -7,8 +7,8 @@ import { expectation } from "../constants/partners";
 const Expectations = () => {
   return (
     <section className="px-2">
-      <div className="border border-primary-main md:grid md:grid-cols-7 md:grid-rows-2 max-w-[1400px] mx-auto">
-        <div className="md:col-span-2 md:row-span-2 p-8 md:pb-0">
+      <div className="mx-auto max-w-[1400px] border border-primary-main md:grid md:grid-cols-7 md:grid-rows-2">
+        <div className="p-8 md:col-span-2 md:row-span-2 md:pb-0">
           <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
             What to Expect
           </Typography>
@@ -25,7 +25,7 @@ const Expectations = () => {
             </Typography>{" "}
             we ll square away the rest.
           </Typography>
-          <div className="flex items-center max-w-[250px] mt-10 md:mt-20">
+          <div className="mt-10 flex max-w-[250px] items-center md:mt-20">
             <ButtonSm
               text="Let us help you"
               customStyle="!uppercase !text-[11px]"

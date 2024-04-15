@@ -4,8 +4,7 @@ import closeIcon from "../assets/close.svg";
 import { Link, useLocation } from "react-router-dom";
 import { navItems } from "../constants/navLinks";
 import { ButtonLg, ButtonSm } from "./Button";
-import Logo from "../assets/logo-dark.png"
-
+import Logo from "../assets/logo-dark.png";
 
 const NavItem = ({ items, onClick }) => {
   const location = useLocation();
@@ -15,7 +14,7 @@ const NavItem = ({ items, onClick }) => {
 
   return (
     <li
-      className={`hover:underline underline-offset-4 transition-all ${
+      className={`underline-offset-4 transition-all hover:underline ${
         isActive
           ? "text-primary-main underline hover:text-gray-100"
           : "text-white hover:text-gray-100"
@@ -52,20 +51,20 @@ const DarkNavbar = () => {
 
   return (
     <nav
-      className={`bg-bg-color z-50 w-full h-20 bg-primary-dark fixed flex justify-between items-center py-4 px-10 transition-all duration-500 ease-in-out ${
+      className={`bg-bg-color fixed z-50 flex h-20 w-full items-center justify-between bg-primary-dark px-10 py-4 transition-all duration-500 ease-in-out ${
         isScrolled ? "h-16 shadow-md shadow-red-100" : ""
       }`}
     >
       <Link to="/" className="block w-28">
         <img src={Logo} alt="logo" className="w-full" />
       </Link>
-      <div className="hidden items-center justify-between w-3/5 gap-20 md:flex">
-        <ul className="w-1/2 h-full items-center justify-between flex">
+      <div className="hidden w-3/5 items-center justify-between gap-20 md:flex">
+        <ul className="flex h-full w-1/2 items-center justify-between">
           {navItems.map((items, index) => (
             <NavItem items={items} key={index} />
           ))}
         </ul>
-        <div className="flex items-center w-1/2 gap-5">
+        <div className="flex w-1/2 items-center gap-5">
           <ButtonSm
             text="Email us"
             customStyle="!w-1/3 text-primary-main border-white"
@@ -73,7 +72,7 @@ const DarkNavbar = () => {
           <ButtonLg text="Book a free consult" customStyle="w-2/3" />
         </div>
       </div>
-      <button className="flex md:hidden text-text-color" onClick={handleToggle}>
+      <button className="text-text-color flex md:hidden" onClick={handleToggle}>
         {navOpen ? (
           <img src={closeIcon} alt="close menu" />
         ) : (
@@ -81,7 +80,7 @@ const DarkNavbar = () => {
         )}
       </button>
       {navOpen && (
-        <div className="absolute bg-primary-dark w-full h-screen top-20 left-0 flex flex-col items-start space-y-4 pl-4">
+        <div className="absolute left-0 top-20 flex h-screen w-full flex-col items-start space-y-4 bg-primary-dark pl-4">
           <ul className="flex flex-col justify-center space-y-4">
             {navItems.map((items, index) => (
               <NavItem
@@ -91,7 +90,7 @@ const DarkNavbar = () => {
               />
             ))}
           </ul>
-          <div className="flex items-center flex-col gap-5">
+          <div className="flex flex-col items-center gap-5">
             <ButtonSm text="Email us" />
             <ButtonLg text="Book a free consult" />
           </div>

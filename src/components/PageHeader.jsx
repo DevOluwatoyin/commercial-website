@@ -4,7 +4,7 @@ import Typography from "./Typography";
 const PageHeader = ({ image, heading, summary, customStyle }) => {
   return (
     <section
-      className={`bg-red-100 pt-32 pb-10 px-4 flex flex-col items-center md:gap-32 md:flex-row md:pt-40 md:pb-20 md:px-20 ${customStyle}`}
+      className={`flex flex-col items-center bg-red-100 px-4 pb-10 pt-32 md:flex-row md:gap-32 md:px-20 md:pb-20 md:pt-40 ${customStyle}`}
     >
       <div className="max-w-sm">
         <img src={image} alt="" className="w-full" />

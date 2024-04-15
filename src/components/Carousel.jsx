@@ -7,7 +7,7 @@ import CarouselItem from "./CarouselItem";
 const Carousel = () => {
   return (
     <div className="flex flex-col gap-5 md:w-[65%]">
-      <div className="flex gap-8 flex-nowrap overflow-hidden md:items-center">
+      <div className="flex flex-nowrap gap-8 overflow-hidden md:items-center">
         {testimonies.map((testimony, id) => (
           <CarouselItem detail={testimony} key={id} />
         ))}

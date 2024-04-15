@@ -16,8 +16,8 @@ const NewsDetails = () => {
         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in lorem sed arcu varius porttitor. Fusce pretium orci a mollis sollicitudin. Mauris vulputate orci eget diam dictum aliquet"
       />
 
-      <div className="flex flex-col justify-between max-w-7xl mx-auto my-10 gap-8 md:flex-row">
-        <div className="space-y-3 w-1/2">
+      <div className="mx-auto my-10 flex max-w-7xl flex-col justify-between gap-8 md:flex-row">
+        <div className="w-1/2 space-y-3">
           <Typography
             color="primary-dark"
             customClassName="!text-body-l !font-regular leading-[1.8]"
@@ -26,20 +26,20 @@ const NewsDetails = () => {
             life-threatening{" "}
             <Link
               to="/news-details"
-              className="text-primary-main underline cursor-pointer hover:text-primary-light transition-all"
+              className="cursor-pointer text-primary-main underline transition-all hover:text-primary-light"
             >
               brain injuries.
             </Link>{" "}
             They can be caused by many different types of accidents, including{" "}
             <Link
               to="/news-details"
-              className="text-primary-main underline cursor-pointer hover:text-primary-light transition-all"
+              className="cursor-pointer text-primary-main underline transition-all hover:text-primary-light"
             >
               car crashes,
             </Link>{" "}
             <Link
               to="/news-details"
-              className="text-primary-main underline cursor-pointer hover:text-primary-light transition-all"
+              className="cursor-pointer text-primary-main underline transition-all hover:text-primary-light"
             >
               falls,
             </Link>{" "}
@@ -48,7 +48,7 @@ const NewsDetails = () => {
             that may require extensive{" "}
             <Link
               to="/news-details"
-              className="text-primary-main underline cursor-pointer hover:text-primary-light transition-all"
+              className="cursor-pointer text-primary-main underline transition-all hover:text-primary-light"
             >
               medical care and rehabilitation.
             </Link>
@@ -124,7 +124,7 @@ const NewsDetails = () => {
                 The force of car{" "}
                 <Link
                   to="/news-details"
-                  className="text-primary-dark underline cursor-pointer hover:text-primary-light transition-all"
+                  className="cursor-pointer text-primary-dark underline transition-all hover:text-primary-light"
                 >
                   accidents
                 </Link>{" "}
@@ -144,7 +144,7 @@ const NewsDetails = () => {
               >
                 <Link
                   to="/news-details"
-                  className="text-primary-dark underline cursor-pointer hover:text-primary-light transition-all"
+                  className="cursor-pointer text-primary-dark underline transition-all hover:text-primary-light"
                 >
                   Falls from heights,
                 </Link>{" "}
@@ -357,7 +357,7 @@ const NewsDetails = () => {
                 medical bills and treatments,{" "}
                 <Link
                   to="/news-details"
-                  className="text-primary-main underline cursor-pointer hover:text-primary-light transition-all"
+                  className="cursor-pointer text-primary-main underline transition-all hover:text-primary-light"
                 >
                   lost wages
                 </Link>{" "}
@@ -388,7 +388,7 @@ const NewsDetails = () => {
                 contact a{" "}
                 <Link
                   to="/news-details"
-                  className="text-primary-main underline cursor-pointer hover:text-primary-light transition-all"
+                  className="cursor-pointer text-primary-main underline transition-all hover:text-primary-light"
                 >
                   personal injury lawyer in Hamilton
                 </Link>{" "}
@@ -402,7 +402,7 @@ const NewsDetails = () => {
         </div>
 
         <div className="w-1/2">
-          <div className="bg-red-100 py-14 px-20">
+          <div className="bg-red-100 px-20 py-14">
             <Typography
               color="primary-dark"
               customClassName="!text-headline-m !font-regular mb-14"

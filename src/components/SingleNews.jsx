@@ -20,7 +20,7 @@ const SingleNews = ({ heading, img, date, title }) => {
       </Typography>
       <div className="relative -z-10">
         <img src={img} alt="" className="" />
-        <img src={AddIcon} alt="" className="absolute right-0 bottom-0" />
+        <img src={AddIcon} alt="" className="absolute bottom-0 right-0" />
       </div>
       <div>
         <Typography customClassName="!text-primary-dark !text-[10px] my-3">

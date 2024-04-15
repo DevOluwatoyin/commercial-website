@@ -5,7 +5,7 @@ import AccommodateImg from "../assets/accommodate.png";
 
 const Accommodate = () => {
   return (
-    <section className="px-4 py-10 md:px-20 space-y-10">
+    <section className="space-y-10 px-4 py-10 md:px-20">
       <Typography
         color="primary-dark"
         variant="headline-l"
@@ -18,7 +18,7 @@ const Accommodate = () => {
         </Typography>{" "}
         you.
       </Typography>
-      <div className="flex flex-col justify-between items-center gap-10 md:gap-40 md:flex-row">
+      <div className="flex flex-col items-center justify-between gap-10 md:flex-row md:gap-40">
         <div className="md:w-1/2">
           <img src={AccommodateImg} alt="" className="w-full" />
         </div>

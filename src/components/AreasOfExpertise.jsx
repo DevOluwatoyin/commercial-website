@@ -2,11 +2,11 @@ import React from "react";
 import Typography from "./Typography";
 import { areasOfPractice } from "../constants/navLinks";
 import Image from "../assets/stat-img.png";
-import Featured from "../assets/featured.jpg"
+import Featured from "../assets/featured.jpg";
 
 const AreasOfExpertise = () => {
   return (
-    <section className="px-4 md:px-20 space-y-10">
+    <section className="space-y-10 px-4 md:px-20">
       <div className="flex flex-col justify-between gap-5 md:flex-row">
         <div className="space-y-5 py-8 md:py-10">
           <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
@@ -48,8 +48,11 @@ const AreasOfExpertise = () => {
           <img src={Image} alt="" />
         </div>
       </div>
-      <div className="flex flex-col gap-5 items-center pb-10 justify-between md:flex-row">
-        <Typography color="primary-dark" customClassName=" !text-headline-l !font-regular">
+      <div className="flex flex-col items-center justify-between gap-5 pb-10 md:flex-row">
+        <Typography
+          color="primary-dark"
+          customClassName=" !text-headline-l !font-regular"
+        >
           As seen on...
         </Typography>
         <div className="md:w-3/4">

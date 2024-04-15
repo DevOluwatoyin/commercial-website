@@ -4,7 +4,7 @@ import { partners } from "../constants/partners";
 
 const Partner = () => {
   return (
-    <section className="bg-white flex flex-col gap-5 px-4 py-20 max-w-7xl mx-auto items-center justify-between md:flex-row">
+    <section className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 bg-white px-4 py-20 md:flex-row">
       <div className="md:w-2/5">
         <Typography
           variant="headline-m"
@@ -20,7 +20,7 @@ const Partner = () => {
           to our community.
         </Typography>
       </div>
-      <div className="flex items-center gap-4 mx-auto w-4/5 md:w-3/5">
+      <div className="mx-auto flex w-4/5 items-center gap-4 md:w-3/5">
         {partners.map((partner, id) => (
           <div className="w-[171px]" key={id}>
             <img src={partner} alt="" className="w-full" />

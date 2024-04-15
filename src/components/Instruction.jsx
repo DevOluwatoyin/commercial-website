@@ -27,9 +27,9 @@ const Instruction = () => {
         </Typography>
       </div>
 
-      <div className="grid mt-16 grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-20">
+      <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-20">
         {accidentInstructions.map((each, id) => (
-          <div key={id} className="flex gap-3 items-baseline">
+          <div key={id} className="flex items-baseline gap-3">
             <Typography fontWeight="medium" variant="title-l">
               {each.id}
             </Typography>

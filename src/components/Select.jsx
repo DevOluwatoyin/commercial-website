@@ -9,7 +9,7 @@ const Select = ({
   return (
     <div className={`relative inline-block w-64 ${customWrapperStyle}`}>
       <select
-        className={`block appearance-none w-full bg-white border border-primary-main border-r-2 border-b-2 text-xs font-medium text-center text-primary-dark py-3 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 ${customSelectStyle}`}
+        className={`block w-full appearance-none border border-b-2 border-r-2 border-primary-main bg-white px-4 py-3 pr-8 text-center text-xs font-medium leading-tight text-primary-dark focus:border-gray-500 focus:outline-none ${customSelectStyle}`}
       >
         <option hidden>{optionHeading}</option>
         <option>Option 1</option>

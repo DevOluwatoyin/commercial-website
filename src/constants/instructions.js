@@ -40,7 +40,7 @@ export const testimonies = [
   {
     name: "Peter Balach",
     testimony:
-    "Maecenas ullamcorper molestie veneelementum scelerisque. Quisque sit aamet laoreet libero. Curabitur et maseuismod nec pretium lorem. Ut impepharetra. Donec fermentum pellenteNullam id euismod dui. Integer pellevestibulum ullamcorper",
+      "Maecenas ullamcorper molestie veneelementum scelerisque. Quisque sit aamet laoreet libero. Curabitur et maseuismod nec pretium lorem. Ut impepharetra. Donec fermentum pellenteNullam id euismod dui. Integer pellevestibulum ullamcorper",
   },
   {
     name: "Jim Smith",

@@ -24,7 +24,7 @@ array of practice areas, ensuring our clients receive the highest caliber
 representation for their unique needs."
       />
       <div className="p-4">
-        <div className="border-t border-t-gray-200 flex flex-col max-w-7xl mx-auto">
+        <div className="mx-auto flex max-w-7xl flex-col border-t border-t-gray-200">
           {areasOfPractice.map((area, id) => (
             <div key={id} className="border-b border-b-gray-200 py-2">
               <div
@@ -47,7 +47,7 @@ representation for their unique needs."
               </div>
 
               {activeIndex === id && (
-                <div className="grid grid-cols-3 gap-4 items-center justify-between py-3">
+                <div className="grid grid-cols-3 items-center justify-between gap-4 py-3">
                   {area.subCategories.map((subCategory, id) => (
                     <div className="flex items-center gap-2" key={id}>
                       <img src={RedDot} alt="" />

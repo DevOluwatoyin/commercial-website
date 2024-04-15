@@ -13,10 +13,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <section>
-      <div className="bg-red-100 p-4 py-12 md:p-12 pb-2">
-        <div className="flex flex-col gap-5 justify-between md:flex-row">
+      <div className="bg-red-100 p-4 py-12 pb-2 md:p-12">
+        <div className="flex flex-col justify-between gap-5 md:flex-row">
           <div className="md:w-2/5">
-            <div className="md:w-2/3 space-y-5">
+            <div className="space-y-5 md:w-2/3">
               <Typography
                 variant="headline-l"
                 fontWeight="medium"
@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-7 justify-between w-3/5 md:flex-row">
+          <div className="flex w-3/5 flex-col justify-between gap-7 md:flex-row">
             <div className="flex flex-col space-y-10 pb-4 md:w-1/3">
               <div>
                 <Typography customClassName="uppercase mb-3">
@@ -57,7 +57,7 @@ const Footer = () => {
               </div>
               <div>
                 <Typography customClassName="mb-5 uppercase">Follow</Typography>
-                <div className="flex items-center justify-between w-3/5">
+                <div className="flex w-3/5 items-center justify-between">
                   {socials.map((social, id) => (
                     <a href={social.url} key={id}>
                       <img src={social.icon} alt="" />
@@ -104,7 +104,7 @@ const Footer = () => {
             <div className="md:w-1/3">
               <Link
                 to="/areas-of-practice"
-                className="text-body-m text-primary-main mb-3 uppercase inline-block"
+                className="mb-3 inline-block text-body-m uppercase text-primary-main"
               >
                 Areas of Practice
               </Link>
@@ -122,13 +122,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <small className="block mt-5">
+        <small className="mt-5 block">
           &copy; Copyright {new Date().getFullYear()} Virk Personal Injury Law
           All Rights Reserved.
         </small>
       </div>
-      <div className="w-full relative h-60 bg-primary-main">
-        <p className="uppercase tracking-[20px] font-medium absolute bottom-3 right-0 text-white text-5xl md:text-8xl">
+      <div className="relative h-60 w-full bg-primary-main">
+        <p className="absolute bottom-3 right-0 text-5xl font-medium uppercase tracking-[20px] text-white md:text-8xl">
           Virk
         </p>
       </div>

@@ -4,7 +4,7 @@ import stars from "../assets/stars.svg";
 
 const CarouselItem = ({ detail }) => {
   return (
-    <div className="border border-primary-main p-5 space-y-7 w-72 flex-shrink-0 flex justify-center items-center md:w-96 md:h-96">
+    <div className="flex w-72 flex-shrink-0 items-center justify-center space-y-7 border border-primary-main p-5 md:h-96 md:w-96">
       <div>
         <div className="space-y-4">
           <Typography variant="headline-l" fontWeight="regular">

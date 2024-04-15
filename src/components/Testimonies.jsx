@@ -6,7 +6,7 @@ import Carousel from "./Carousel";
 
 const Testimonies = () => {
   return (
-    <section className="p-4 py-10 flex flex-col gap-10 justify-between md:py-16 md:px-16 md:flex-row">
+    <section className="flex flex-col justify-between gap-10 p-4 py-10 md:flex-row md:px-16 md:py-16">
       <div className="md:w-[35%]">
         <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
           What our clients are saying
@@ -24,8 +24,11 @@ const Testimonies = () => {
           </Typography>
           .
         </Typography>
-        <div className="flex items-center max-w-[250px] mt-10 md:mt-20">
-          <ButtonSm text="Read more Reviews" customStyle="!uppercase !text-[11px]" />
+        <div className="mt-10 flex max-w-[250px] items-center md:mt-20">
+          <ButtonSm
+            text="Read more Reviews"
+            customStyle="!uppercase !text-[11px]"
+          />
           <img src={ArrowRight} alt="" />
         </div>
       </div>

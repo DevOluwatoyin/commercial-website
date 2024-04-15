@@ -15,7 +15,7 @@ const CarAccident = () => {
         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in lorem sed arcu varius porttitor. Fusce pretium orci a mollis sollicitudin. Mauris vulputate orci eget diam dictum aliquet"
       />
 
-      <div className="flex flex-col justify-between max-w-7xl mx-auto my-10 gap-8 md:flex-row">
+      <div className="mx-auto my-10 flex max-w-7xl flex-col justify-between gap-8 md:flex-row">
         <div className="w-1/2">
           <Typography
             color="primary-dark"
@@ -24,7 +24,7 @@ const CarAccident = () => {
             Levelling the field between you and the insurance company.
           </Typography>
 
-          <div className="border-b border-b-primary-light pb-7 space-y-3">
+          <div className="space-y-3 border-b border-b-primary-light pb-7">
             <Typography
               color="primary-dark"
               fontWeight="regular"
@@ -63,7 +63,7 @@ const CarAccident = () => {
             </Typography>
           </div>
 
-          <div className="border-b border-b-primary-light pb-7 space-y-3">
+          <div className="space-y-3 border-b border-b-primary-light pb-7">
             <Typography
               color="primary-dark"
               customClassName="!text-title-l !font-regular my-5"
@@ -309,7 +309,7 @@ const CarAccident = () => {
             </ol>
           </div>
 
-          <div className="pb-7 space-y-3">
+          <div className="space-y-3 pb-7">
             <Typography
               color="primary-dark"
               customClassName="!text-title-l !font-regular my-5"
@@ -338,7 +338,7 @@ const CarAccident = () => {
         </div>
 
         <div className="w-1/2">
-          <div className="bg-red-100 py-14 px-20">
+          <div className="bg-red-100 px-20 py-14">
             <Typography
               color="primary-dark"
               customClassName="!text-headline-m !font-regular mb-14"
@@ -350,7 +350,7 @@ const CarAccident = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-between items-center mb-20 max-w-7xl mx-auto md:flex-row">
+      <div className="mx-auto mb-20 flex max-w-7xl flex-col items-center justify-between md:flex-row">
         <Typography customClassName="!text-[65px] px-2 !text-primary-dark text-center md:!text-[120px] !leading-[1.1]">
           Let us
           <Typography

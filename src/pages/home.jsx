@@ -14,8 +14,8 @@ import News from "../components/News";
 const Home = () => {
   return (
     <Fragment>
-      <section className="bg-black-700 h-screen">
-        <div className="flex !flex-col px-5 py-20 !justify-between h-screen md:px-10">
+      <section className="h-screen bg-black-700">
+        <div className="flex h-screen !flex-col !justify-between px-5 py-20 md:px-10">
           <Typography customClassName="!text-[80px] text-white md:!text-[200px] leading-[1.1]">
             Results
           </Typography>
@@ -32,7 +32,7 @@ const Home = () => {
 
       <AreasOfExpertise />
 
-      <section className="bg-red-100 flex items-center justify-center py-20">
+      <section className="flex items-center justify-center bg-red-100 py-20">
         <Typography customClassName="!text-[65px] px-2 mx-auto max-w-6xl text-center md:!text-[120px] !leading-[1.1]">
           <q>They go above and beyond for you...</q>
         </Typography>
