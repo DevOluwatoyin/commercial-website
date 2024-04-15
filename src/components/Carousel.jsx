@@ -8,15 +8,13 @@ const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextItem = () => {
-    if (currentIndex < testimonies.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonies.length);
   };
 
   const previousItem = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonies.length - 1 : prevIndex - 1,
+    );
   };
 
   return (
@@ -31,14 +29,11 @@ const Carousel = () => {
         ))}
       </div>
       <div className="flex items-center gap-4">
-        <button onClick={previousItem} disabled={currentIndex === 0}>
-          <img src={ArrowLeft} alt="" />
+        <button onClick={previousItem}>
+          <img src={ArrowLeft} alt="Previous" />
         </button>
-        <button
-          onClick={nextItem}
-          disabled={currentIndex === testimonies.length - 1}
-        >
-          <img src={ArrowRight} alt="" />
+        <button onClick={nextItem}>
+          <img src={ArrowRight} alt="Next" />
         </button>
       </div>
     </div>
