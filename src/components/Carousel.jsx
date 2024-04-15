@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ArrowRight from "../assets/arrow-right.svg";
 import ArrowLeft from "../assets/arrow-left.svg";
-import { testimonies } from "../constants/instructions";
 import CarouselItem from "./CarouselItem";
+import { testimonies } from "../constants/testimonies";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,6 +28,7 @@ const Carousel = () => {
           />
         ))}
       </div>
+
       <div className="flex items-center gap-4">
         <button onClick={previousItem}>
           <img src={ArrowLeft} alt="Previous" />

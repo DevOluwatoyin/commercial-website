@@ -5,7 +5,8 @@ import stars from "../assets/stars.svg";
 const CarouselItem = ({ detail, isVisible }) => {
   return (
     <div
-      className={`flex w-72 flex-shrink-0 items-center justify-center space-y-7 border border-primary-main p-5 md:h-96 md:w-96 ${isVisible ? "block" : "hidden"}`}
+      className={`flex w-72 flex-shrink-0 items-center justify-center space-y-7 border border-primary-main p-5 md:h-96 md:w-96`}
+      style={{ order: isVisible ? -1 : "initial" }}
     >
       <div>
         <div className="space-y-4">

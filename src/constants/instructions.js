@@ -30,21 +30,3 @@ export const accidentInstructions = [
     more: "When it comes to accidents and personal injuries, speak to a lawyer as soon as possible. Understandably, an accident is a very difficult time for anyone, but delays can limit or even extinguish your rights of commencing a lawsuit or obtaining accident benefits from the insurance company as there are timelines that need to be followed. You can contact us by telephone, email, or the form on our website to book a free consultation. We will assist you in understanding the importance of the above and protect the evidence necessary to build your personal injury case.",
   },
 ];
-
-export const testimonies = [
-  {
-    name: "Jim Smith",
-    testimony:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedfinibus mi a tincidunt sagittis. Proin non lacus ac purus laoreetvehicula. Quisque eu dui fermentum ante scelerisque viverra.Phasellus odio ex, ullamcorper quis lorem quis, varius temporjusto. Suspendisse condimentu sed tellus a orta. Integer atsemper dui.",
-  },
-  {
-    name: "Peter Balach",
-    testimony:
-      "Maecenas ullamcorper molestie veneelementum scelerisque. Quisque sit aamet laoreet libero. Curabitur et maseuismod nec pretium lorem. Ut impepharetra. Donec fermentum pellenteNullam id euismod dui. Integer pellevestibulum ullamcorper",
-  },
-  {
-    name: "Jim Smith",
-    testimony:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedfinibus mi a tincidunt sagittis. Proin non lacus ac purus laoreetvehicula. Quisque eu dui fermentum ante scelerisque viverra.Phasellus odio ex, ullamcorper quis lorem quis, varius temporjusto. Suspendisse condimentu sed tellus a orta. Integer atsemper dui.",
-  },
-];
