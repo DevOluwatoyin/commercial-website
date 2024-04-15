@@ -50,12 +50,12 @@ const News = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between pb-10 pt-24 md:flex-row">
-          <Typography customClassName="!text-[65px] px-2 !text-primary-dark text-center md:!text-[120px] !leading-[1.1]">
+        <div className="flex flex-col items-center justify-between gap-8 pb-10 pt-24 md:flex-row md:gap-0">
+          <Typography customClassName="!text-[65px] px-2 !text-primary-dark !leading-[1.1] text-center md:!text-[120px]">
             Let us
             <Typography
               tag="span"
-              customClassName="!text-[65px] px-2 md:!text-[120px] !leading-[1.1]"
+              customClassName="!text-[65px] px-2 !leading-[1.1] md:!text-[120px]"
             >
               {" "}
               help
@@ -65,7 +65,7 @@ const News = () => {
 
           <ButtonSm
             text="Book a free consult"
-            customStyle="!w-1/5 !uppercase font-medium"
+            customStyle="!uppercase font-medium md:w-1/5"
           />
         </div>
       </div>

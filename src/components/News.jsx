@@ -5,7 +5,7 @@ import Typography from "./Typography";
 
 const News = () => {
   return (
-    <section className="p-4 md:p-20">
+    <section className="px-4 py-10 md:p-20">
       <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
         Latest from Virk
       </Typography>
