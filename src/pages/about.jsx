@@ -8,16 +8,16 @@ import { reasonsToChoose, values } from "../constants/about";
 
 const ReasonsToChoose = ({ reasons }) => {
   return (
-    <div className="flex flex-col justify-between py-8 md:flex-row">
-      <div className="w-1/2">
+    <div className="flex flex-col justify-between gap-3 py-8 md:flex-row md:gap-0">
+      <div className="md:w-1/2">
         <Typography
-          customClassName="!text-xl !text-white w-2/3"
+          customClassName="!text-xl !text-white md:w-2/3"
           fontWeight="regular"
         >
           {reasons.title}
         </Typography>
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <Typography
           customClassName="mb-2 !text-[12px] !text-white"
           fontWeight="regular"
@@ -25,7 +25,7 @@ const ReasonsToChoose = ({ reasons }) => {
           {reasons.text1}
         </Typography>
         <Typography
-          customClassName=" !text-[12px] !text-white"
+          customClassName="!text-[12px] !text-white"
           fontWeight="regular"
         >
           {reasons.text2}
@@ -38,15 +38,15 @@ const ReasonsToChoose = ({ reasons }) => {
 const About = () => {
   return (
     <section className="bg-primary-dark pb-10">
-      <div className="flex h-screen flex-col items-center justify-center gap-28 pt-20">
-        <p className="max-w-2xl text-center text-3xl text-white">
+      <div className="flex h-screen flex-col items-center justify-center gap-28 px-3 pt-20">
+        <p className="max-w-2xl text-center text-xl text-white md:text-3xl">
           With every client, we are driven by a singular mission: to champion
           our their rights with unwavering dedication and integrity.
         </p>
         <img src={AboutTxt} alt="About" />
       </div>
 
-      <div className="mx-auto flex max-w-6xl flex-col justify-between py-8 md:flex-row md:py-14">
+      <div className="mx-auto flex max-w-6xl flex-col justify-between gap-5 px-3 py-8 md:flex-row md:items-center md:py-14 lg:items-start">
         <div className="space-y-5 px-1 md:w-1/2">
           <Typography
             color=""
@@ -72,12 +72,12 @@ const About = () => {
           </Typography>
         </div>
 
-        <div className="md:w-1/3">
+        <div className="md:w-1/2 lg:w-1/3">
           <img src={AboutImg} className="w-full grayscale" alt="About Image" />
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl px-3">
         <Typography
           customClassName="uppercase !text-[11px] mb-1 !text-gray-300"
           fontWeight="medium"
@@ -105,7 +105,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mx-auto my-16 flex max-w-4xl justify-between bg-primary-main px-10 py-20">
+      <div className="mx-auto my-16 flex  max-w-4xl flex-col justify-between gap-5 bg-primary-main px-3 py-20 md:flex-row md:px-10">
         <div className="space-y-2">
           <Typography
             customClassName="!text-white !text-lg"
@@ -115,18 +115,16 @@ const About = () => {
           </Typography>
           <img src={Stars} alt="star rating" />
           <Typography
-            color=""
             customClassName="!text-[11px] !text-white"
             fontWeight="regular"
           >
             A year ago
           </Typography>
         </div>
-        <div className="flex w-[70%] items-start gap-3">
-          <img src={Quote} alt="Quote" className="w-16" />
+        <div className="flex items-start gap-3 md:w-[70%]">
+          <img src={Quote} alt="Quote" className="w-4 md:w-16" />
           <Typography
-            color=""
-            customClassName="!text-2xl !text-white"
+            customClassName="!text-white md:!text-2xl"
             fontWeight="regular"
           >
             Maecenas ullamcorper molestie venenatis. Duis dapibus mi a elementum
@@ -139,7 +137,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl py-10">
+      <div className="mx-auto max-w-6xl px-3 py-10">
         <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
           Our Values
         </Typography>
@@ -160,7 +158,7 @@ const About = () => {
           transparency, our core values drive everything we do.
         </Typography>
 
-        <div className="mx-auto mt-14 grid max-w-7xl grid-cols-2 border border-primary-main md:grid-cols-4">
+        <div className="mx-auto mt-14 grid max-w-7xl border border-primary-main sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {values.map((value, id) => (
             <div key={id} className="border border-primary-main p-4">
               <Typography

@@ -9,14 +9,18 @@ import { contactDetails } from "../constants/contact";
 const Contact = () => {
   return (
     <section className="bg-primary-dark pb-10">
-      <div>
-        <img src={ContactImg} alt="Contact" className="grayscale" />
+      <div className="h-auto">
+        <img
+          src={ContactImg}
+          alt="Contact"
+          className="h-80 object-cover grayscale md:h-auto"
+        />
       </div>
 
       <div className="mx-auto mt-10 max-w-7xl border-t border-gray-300 py-4">
         {contactDetails.map((contact, id) => (
           <div
-            className="grid grid-cols-[500px_400px_400px] border-b border-gray-300 py-4"
+            className="space-y-4 border-b border-gray-300 px-3 py-4 md:grid md:space-y-0 xl:grid-cols-[500px_400px_400px]"
             key={id}
           >
             <Typography
@@ -90,7 +94,7 @@ const Contact = () => {
         ))}
       </div>
 
-      <div className="mx-auto my-20 flex max-w-5xl justify-between">
+      <div className="mx-auto my-20 flex max-w-5xl flex-col justify-between gap-4 px-3 md:flex-row">
         <Typography
           fontWeight="regular"
           variant="headline-m"
@@ -130,7 +134,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 flex max-w-6xl justify-between bg-white p-20">
+      <div className="mx-auto mt-10 flex max-w-6xl flex-col justify-between gap-5 bg-white px-3 py-10 md:flex-row md:px-14 lg:p-20">
         <Typography
           variant="headline-l"
           color="primary-dark"
@@ -139,7 +143,7 @@ const Contact = () => {
         >
           Book a free consultation.
         </Typography>
-        <div className="w-1/2">
+        <div className="md:w-2/3">
           <ContactForm image={Image} />
         </div>
       </div>

@@ -58,7 +58,7 @@ const DarkNavbar = () => {
       <Link to="/" className="block w-28">
         <img src={Logo} alt="logo" className="w-full" />
       </Link>
-      <div className="hidden w-3/5 items-center justify-between gap-20 md:flex">
+      <div className="hidden w-3/5 items-center justify-between gap-20 md:flex md:w-4/5">
         <ul className="flex h-full w-1/2 items-center justify-between">
           {navItems.map((items, index) => (
             <NavItem items={items} key={index} />
@@ -67,7 +67,7 @@ const DarkNavbar = () => {
         <div className="flex w-1/2 items-center gap-5">
           <ButtonSm
             text="Email us"
-            customStyle="!w-1/3 text-primary-main border-white"
+            customStyle="!w-1/3 text-primary-main border-white md:!w-1/2"
           />
           <ButtonLg text="Book a free consult" customStyle="w-2/3" />
         </div>

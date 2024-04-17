@@ -48,6 +48,7 @@ const Footer = () => {
                         color="primary-dark"
                         tag="span"
                         fontWeight="regular"
+                        customClassName="!text-[12px] lg:!text-sm"
                       >
                         {contact.subject}
                       </Typography>
@@ -57,7 +58,7 @@ const Footer = () => {
               </div>
               <div>
                 <Typography customClassName="mb-5 uppercase">Follow</Typography>
-                <div className="flex w-3/5 items-center justify-between">
+                <div className="flex w-3/5 items-center justify-between gap-2">
                   {socials.map((social, id) => (
                     <a href={social.url} key={id}>
                       <img src={social.icon} alt="" />
@@ -75,7 +76,7 @@ const Footer = () => {
                     <Link
                       href={firm.url}
                       key={id}
-                      className="text-primary-dark"
+                      className="text-[12px] text-primary-dark lg:text-sm"
                     >
                       {firm.title}
                     </Link>
@@ -93,6 +94,7 @@ const Footer = () => {
                       color="primary-dark"
                       tag="span"
                       fontWeight="regular"
+                      customClassName="!text-[12px] lg:!text-sm"
                     >
                       {service}
                     </Typography>
@@ -113,7 +115,7 @@ const Footer = () => {
                   <Link
                     to={practice.href}
                     key={id}
-                    className="text-sm text-primary-dark hover:text-primary-main"
+                    className="text-[12px] text-sm text-primary-dark hover:text-primary-main lg:text-sm"
                   >
                     {practice.category}
                   </Link>
