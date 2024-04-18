@@ -19,10 +19,10 @@ const News = () => {
       />
 
       <div className="mx-auto my-14 max-w-7xl px-4 md:my-20">
-        <div className="flex items-center gap-4">
+        {/* <div className="flex items-center gap-4">
           <Select image={caret} optionHeading="FILTER BY EXPERTISE" />
           <Select image={caret} optionHeading="SORT" />
-        </div>
+        </div> */}
 
         <div className="mt-10">
           <Typography
