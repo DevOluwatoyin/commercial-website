@@ -58,7 +58,7 @@ const DarkNavbar = () => {
       <Link to="/" className="block w-28">
         <img src={Logo} alt="logo" className="w-full" />
       </Link>
-      <div className="hidden w-3/5 items-center justify-between gap-20 md:flex md:w-4/5">
+      <div className="hidden items-center justify-between gap-20 md:flex md:w-4/5 lg:w-3/5">
         <ul className="flex h-full w-1/2 items-center justify-between">
           {navItems.map((items, index) => (
             <NavItem items={items} key={index} />
@@ -67,9 +67,12 @@ const DarkNavbar = () => {
         <div className="flex w-1/2 items-center gap-5">
           <ButtonSm
             text="Email us"
-            customStyle="!w-1/3 text-primary-main border-white md:!w-1/2"
+            customStyle="!w-1/3 text-primary-main border-white md:!w-1/2 hover:border-primary-main"
           />
-          <ButtonLg text="Book a free consult" customStyle="w-2/3" />
+          <ButtonLg
+            text="Book a free consult"
+            customStyle="w-2/3 hover:border-white"
+          />
         </div>
       </div>
       <button className="text-text-color flex md:hidden" onClick={handleToggle}>
@@ -91,8 +94,14 @@ const DarkNavbar = () => {
             ))}
           </ul>
           <div className="flex flex-col items-center gap-5">
-            <ButtonSm text="Email us" />
-            <ButtonLg text="Book a free consult" />
+            <ButtonSm
+              text="Email us"
+              customStyle="border-white hover:border-primary-main"
+            />
+            <ButtonLg
+              text="Book a free consult"
+              customStyle="hover:border-white"
+            />
           </div>
         </div>
       )}

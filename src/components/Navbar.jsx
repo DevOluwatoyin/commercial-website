@@ -58,7 +58,7 @@ const Navbar = () => {
       <Link to="/" className="block w-28">
         <img src={Logo} alt="logo" className="w-full" />
       </Link>
-      <div className="hidden w-3/5 items-center justify-between gap-20 md:flex md:w-4/5">
+      <div className="hidden items-center justify-between gap-20 md:flex md:w-4/5 lg:w-3/5">
         <ul className="flex h-full w-1/2 items-center justify-between">
           {navItems.map((items, index) => (
             <NavItem items={items} key={index} />
