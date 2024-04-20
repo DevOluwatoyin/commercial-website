@@ -16,15 +16,15 @@ const Home = () => {
     <Fragment>
       <section className="h-screen bg-black-700">
         <div className="flex h-screen !flex-col !justify-between px-5 py-20 md:px-10">
-          <Typography customClassName="!text-[80px] text-white md:!text-[200px] leading-[1.1]">
+          <p className="fluid-text font-bold leading-[1.1] text-white">
             Results
-          </Typography>
-          <Typography customClassName="!text-[80px] text-white self-center md:!text-[200px] leading-[1.1]">
+          </p>
+          <p className="fluid-text self-center font-bold leading-[1.1] text-white">
             fair &
-          </Typography>
-          <Typography customClassName="!text-[80px] text-white self-end md:!text-[200px]  leading-[1.1]">
+          </p>
+          <p className="fluid-text self-end font-bold leading-[1.1] text-white">
             square.
-          </Typography>
+          </p>
         </div>
       </section>
 

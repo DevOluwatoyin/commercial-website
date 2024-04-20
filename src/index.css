@@ -10,6 +10,10 @@
   font-weight: 400;
 }
 
+.fluid-text {
+  font-size: clamp(5rem, 26vw, 13rem);
+}
+
 .delivery {
   background-image: url("/src/assets/handshake.png");
   background-repeat: no-repeat;
