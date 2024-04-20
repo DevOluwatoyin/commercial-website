@@ -1,12 +1,10 @@
 import React from "react";
 import RedBox from "../assets/red-box.svg";
 import PageHeader from "../components/PageHeader";
-import Select from "../components/Select";
-import caret from "../assets/caret-black.svg";
 import Typography from "../components/Typography";
 import SingleNews from "../components/SingleNews";
 import { newsPost } from "../constants/partners";
-import { ButtonLg, ButtonSm } from "../components/Button";
+import { ButtonSm } from "../components/Button";
 import NewsLetter from "../components/Newsletter";
 
 const News = () => {
@@ -19,11 +17,6 @@ const News = () => {
       />
 
       <div className="mx-auto my-14 max-w-7xl px-4 md:my-20">
-        {/* <div className="flex items-center gap-4">
-          <Select image={caret} optionHeading="FILTER BY EXPERTISE" />
-          <Select image={caret} optionHeading="SORT" />
-        </div> */}
-
         <div className="mt-10">
           <Typography
             color="primary-dark"
@@ -46,7 +39,7 @@ const News = () => {
               ))}
             </div>
 
-            <p className="mb-10 mt-14 text-right">Pagination</p>
+            {/* <p className="mb-10 mt-14 text-right">Pagination</p> */}
           </div>
         </div>
 
