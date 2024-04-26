@@ -43,7 +43,7 @@ const About = () => {
           With every client, we are driven by a singular mission: to champion
           our their rights with unwavering dedication and integrity.
         </p>
-        <img src={AboutTxt} alt="About" />
+        <img src={AboutTxt} alt="About" className="self-start" />
       </div>
 
       <div className="mx-auto flex max-w-6xl flex-col justify-between gap-5 px-3 py-8 md:flex-row md:items-center md:py-14 lg:items-start">
@@ -72,7 +72,7 @@ const About = () => {
           </Typography>
         </div>
 
-        <div className="md:w-1/2 lg:w-1/3">
+        <div className="md:w-1/2">
           <img
             src={AboutImg}
             className="w-full grayscale md:self-start"
@@ -109,7 +109,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mx-auto my-16 flex  max-w-4xl flex-col justify-between gap-5 bg-primary-main px-3 py-20 md:flex-row md:px-10">
+      <div className="mx-auto my-16 flex max-w-7xl flex-col justify-between gap-5 bg-primary-main px-3 py-20 md:flex-row md:px-10 md:justify-start md:gap-20 lg:pl-10">
         <div className="space-y-2">
           <Typography
             customClassName="!text-white !text-lg"
@@ -119,16 +119,16 @@ const About = () => {
           </Typography>
           <img src={Stars} alt="star rating" />
           <Typography
-            customClassName="!text-[11px] !text-white"
+            customClassName="!text-[11px] !text-white !uppercase md:!mt-10"
             fontWeight="regular"
           >
             A year ago
           </Typography>
         </div>
-        <div className="flex items-start gap-3 md:w-[70%]">
-          <img src={Quote} alt="Quote" className="w-4 md:w-16" />
+        <div className="flex items-start gap-3 md:w-[70%] lg:gap-10 lg:w-[80%]">
+          <img src={Quote} alt="Quote" className="w-4 md:w-16 lg:w-24" />
           <Typography
-            customClassName="!text-white md:!text-2xl"
+            customClassName="!text-white md:!text-2xl lg:!text-4xl"
             fontWeight="regular"
           >
             Maecenas ullamcorper molestie venenatis. Duis dapibus mi a elementum
