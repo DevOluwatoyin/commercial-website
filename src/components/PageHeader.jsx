@@ -14,7 +14,7 @@ const PageHeader = ({ image, heading, summary, customStyle }) => {
           color="primary-dark"
           variant="headline-l"
           fontWeight="medium"
-          customClassName="mb-5"
+          customClassName="mb-5 max-w-lg"
         >
           {heading}
         </Typography>

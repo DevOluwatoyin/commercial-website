@@ -13,7 +13,7 @@ const NewsDetails = () => {
       <PageHeader
         image={Scan}
         heading="What You Need To Know About Diffuse Axonal Injuries"
-        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in lorem sed arcu varius porttitor. Fusce pretium orci a mollis sollicitudin. Mauris vulputate orci eget diam dictum aliquet"
+        summary=""
       />
 
       <div className="mx-auto my-10 flex max-w-7xl flex-col justify-between gap-8 md:flex-row">
@@ -316,7 +316,7 @@ const NewsDetails = () => {
 
               <Typography
                 color="primary-dark"
-                customClassName="!text-headline-s !font-regular mb-14"
+                customClassName="!text-body-l !font-regular mb-14"
               >
                 How Is Diffuse Axonal Injury Treated?
               </Typography>
@@ -342,7 +342,7 @@ const NewsDetails = () => {
 
               <Typography
                 color="primary-dark"
-                customClassName="!text-headline-s !font-regular mb-14"
+                customClassName="!text-body-l !font-regular mb-14"
               >
                 How Is Diffuse Axonal Injury Claims
               </Typography>
@@ -376,7 +376,7 @@ const NewsDetails = () => {
 
               <Typography
                 color="primary-dark"
-                customClassName="!text-headline-s !font-regular mb-14"
+                customClassName="!text-body-l !font-regular mb-14"
               >
                 Contact A Personal Injury Lawyer in Hamilton
               </Typography>
