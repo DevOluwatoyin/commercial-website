@@ -1,4 +1,3 @@
-import React from "react";
 import ContactImg from "../assets/contact-img.png";
 import NewsLetter from "../components/Newsletter";
 import Typography from "../components/Typography";
@@ -134,16 +133,16 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 flex max-w-6xl flex-col justify-between gap-5 bg-white px-3 py-10 md:flex-row md:px-14 lg:p-20">
+      <div className="mx-auto mt-10 flex max-w-7xl flex-col justify-between gap-5 bg-white px-3 py-10 md:flex-row md:px-14 lg:p-20">
         <Typography
-          variant="headline-l"
+          // variant="headline-l"
           color="primary-dark"
-          fontWeight="regular"
-          customClassName="md:max-w-xs"
+          fontWeight="bold"
+          customClassName="md:!text-5xl md:max-w-xs"
         >
           Book a free consultation.
         </Typography>
-        <div className="md:w-2/3">
+        <div className="md:w-1/2">
           <ContactForm image={Image} />
         </div>
       </div>
