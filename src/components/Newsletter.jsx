@@ -1,15 +1,14 @@
-import React from "react";
 import Typography from "./Typography";
 import { ButtonLg } from "./Button";
 
 const NewsLetter = () => {
   return (
-    <section className="bg-black-700 px-4 py-12">
-      <div className="mx-auto max-w-7xl space-y-14">
+    <section className="bg-black-700 px-4 py-12 h-72">
+      <div className="mx-auto max-w-7xl flex flex-col justify-between h-full">
         <Typography
           variant="display-s"
           fontWeight="regular"
-          customClassName="text-white"
+          customClassName="text-white md:!text-5xl"
         >
           Sign up for our newsletter.
         </Typography>
@@ -19,7 +18,7 @@ const NewsLetter = () => {
             placeholder="Email"
             className="!w-4/5 px-6 py-2 placeholder:text-primary-dark"
           />
-          <ButtonLg text="submit" customStyle="!w-[120px]" />
+          <ButtonLg text="submit" customStyle="!w-[120px] !uppercase" />
         </div>
       </div>
     </section>

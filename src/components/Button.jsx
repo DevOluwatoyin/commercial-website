@@ -11,7 +11,7 @@ export const ButtonSm = ({ text, customStyle }) => {
 export const ButtonLg = ({ text, customStyle }) => {
   return (
     <button
-      className={`w-full border-2 border-primary-main bg-primary-main p-2 text-sm capitalize text-white transition-all hover:bg-white hover:text-black-700 ${customStyle}`}
+      className={`w-full border-2 border-primary-main bg-primary-main p-2 text-sm capitalize text-white transition-all hover:bg-white hover:border-white hover:text-black-700 ${customStyle}`}
     >
       {text}
     </button>
