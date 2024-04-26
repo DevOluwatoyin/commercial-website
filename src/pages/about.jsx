@@ -1,10 +1,10 @@
-import React from "react";
 import AboutTxt from "../assets/about-header-txt.svg";
 import Stars from "../assets/white-stars.svg";
 import Quote from "../assets/quote.svg";
 import Typography from "../components/Typography";
 import AboutImg from "../assets/about-img.png";
 import { reasonsToChoose, values } from "../constants/about";
+import { ButtonLg } from "../components/Button";
 
 const ReasonsToChoose = ({ reasons }) => {
   return (
@@ -73,7 +73,11 @@ const About = () => {
         </div>
 
         <div className="md:w-1/2 lg:w-1/3">
-          <img src={AboutImg} className="w-full grayscale" alt="About Image" />
+          <img
+            src={AboutImg}
+            className="w-full grayscale md:self-start"
+            alt="About Image"
+          />
         </div>
       </div>
 
@@ -179,10 +183,21 @@ const About = () => {
         </div>
       </div>
 
-      <div className="my-36">
-        <Typography customClassName="!text-[65px] px-2 !text-white text-center md:!text-[120px] !leading-[1.1]">
-          Let us help you.
+      <div className="mx-auto my-36 flex max-w-7xl justify-between px-2 lg:px-0">
+        <Typography customClassName="!text-[65px] px-2 !font-bold !text-white text-center md:!text-[130px] !leading-[1.1]">
+          Let us{" "}
+          <Typography
+            tag="span"
+            customClassName="!text-[65px] px-2 text-center !font-bold md:!text-[120px] !leading-[1.1]"
+          >
+            help
+          </Typography>{" "}
+          you.
         </Typography>
+        <ButtonLg
+          text="Contact Us"
+          customStyle="!text-[10px] !uppercase !w-40 h-40 md:!text-sm hover:!border-white"
+        />
       </div>
     </section>
   );

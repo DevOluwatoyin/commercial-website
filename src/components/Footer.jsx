@@ -1,4 +1,3 @@
-import React from "react";
 import Typography from "./Typography";
 import { ButtonLg, ButtonSm } from "./Button";
 import {
@@ -12,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="bg-red-100 p-4 py-12 pb-2 md:p-12">
         <div className="flex flex-col justify-between gap-5 md:flex-row">
           <div className="md:w-2/5">
@@ -42,16 +41,34 @@ const Footer = () => {
                 </Typography>
                 <div className="space-y-3">
                   {contactItems.map((contact, id) => (
-                    <div key={id} className="flex gap-3">
+                    <div key={id} className="flex gap-3 items-start">
                       <img src={contact.icon} alt="" className="" />
-                      <Typography
-                        color="primary-dark"
-                        tag="span"
-                        fontWeight="regular"
-                        customClassName="!text-[12px] lg:!text-sm"
-                      >
-                        {contact.subject}
-                      </Typography>
+                      <div>
+                        <Typography
+                          color="primary-dark"
+                          tag="span"
+                          fontWeight="regular"
+                          customClassName="!text-[12px] lg:!text-sm"
+                        >
+                          {contact.subject}
+                        </Typography>
+                        <Typography
+                          color="primary-dark"
+                          // tag="span"
+                          fontWeight="regular"
+                          customClassName="!text-[12px] lg:!text-sm"
+                        >
+                          {contact.line2}
+                        </Typography> 
+                        <Typography
+                          color="primary-dark"
+                          tag="span"
+                          fontWeight="regular"
+                          customClassName="!text-[12px] lg:!text-sm"
+                        >
+                          {contact.line3}
+                        </Typography>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -129,8 +146,8 @@ const Footer = () => {
           All Rights Reserved.
         </small>
       </div>
-      <div className="relative h-60 w-full bg-primary-main">
-        <p className="absolute bottom-3 right-0 text-5xl font-medium uppercase tracking-[20px] text-white md:text-8xl">
+      <div className="relative h-[400px] w-full bg-primary-main">
+        <p className="absolute -bottom-5 -right-5 text-5xl font-[700] uppercase tracking-[15px] text-white md:text-8xl">
           Virk
         </p>
       </div>

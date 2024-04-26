@@ -34,11 +34,14 @@ export const routeOptions = {
 export const contactItems = [
   {
     icon: location,
-    subject: "293 Wellington Street N Suite 105 Hamilton ON L8L 8E7",
+    subject: "293 Wellington Street N",
+    line2: "Suite 105",
+    line3: "Hamilton ON L8L 8E7",
   },
   {
     icon: phone,
-    subject: "905.521.8888 1.888.VIRK.LAW",
+    subject: "905.521.8888",
+    line2: "1.888.VIRK.LAW",
   },
   {
     icon: mail,
