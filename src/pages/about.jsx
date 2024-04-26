@@ -11,21 +11,21 @@ const ReasonsToChoose = ({ reasons }) => {
     <div className="flex flex-col justify-between gap-3 py-8 md:flex-row md:gap-0">
       <div className="md:w-1/2">
         <Typography
-          customClassName="!text-xl !text-white md:w-2/3"
+          customClassName="!text-3xl !text-white md:w-2/3"
           fontWeight="regular"
         >
           {reasons.title}
         </Typography>
       </div>
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 space-y-5">
         <Typography
-          customClassName="mb-2 !text-[12px] !text-white"
+          customClassName="mb-2 !text-lg !text-white"
           fontWeight="regular"
         >
           {reasons.text1}
         </Typography>
         <Typography
-          customClassName="!text-[12px] !text-white"
+          customClassName="!text-lg !text-white"
           fontWeight="regular"
         >
           {reasons.text2}
@@ -46,7 +46,7 @@ const About = () => {
         <img src={AboutTxt} alt="About" className="self-start" />
       </div>
 
-      <div className="mx-auto flex max-w-6xl flex-col justify-between gap-5 px-3 py-8 md:flex-row md:items-center md:py-14 lg:items-start">
+      <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 px-3 py-8 md:flex-row md:items-center md:py-14 lg:items-start">
         <div className="space-y-5 px-1 md:w-1/2">
           <Typography
             color=""
@@ -62,7 +62,7 @@ const About = () => {
             Virk Personal Injury Law has been providing Hamilton and the
             surrounding areas with personal injury law services since 2013.
           </Typography>
-          <Typography customClassName="mb-1 !text-white" fontWeight="regular">
+          <Typography customClassName="mb-1 !text-lg !text-white" fontWeight="regular">
             Personal Injury Law can be very complex and overwhelming. With a
             sharp focus on personal injury cases, we navigate the legal
             landscape with precision and tenacity, ensuring that our clients
@@ -81,21 +81,21 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl px-3">
+      <div className="mx-auto max-w-7xl px-3">
         <Typography
-          customClassName="uppercase !text-[11px] mb-1 !text-gray-300"
-          fontWeight="medium"
+          customClassName="uppercase !text-[15px] mb-1 !text-gray-300"
+          fontWeight="bold"
         >
           Setting a high bar
         </Typography>
 
         <Typography
-          variant="headline-l"
+          // variant="headline-l"
           fontWeight="regular"
-          customClassName="!text-white border-b border-b-gray-200 py-8"
+          customClassName="!text-white !text-5xl border-b border-b-gray-200 py-14"
         >
           This is why you want
-          <Typography tag="span" variant="headline-l" fontWeight="regular">
+          <Typography tag="span" customClassName="!text-5xl" variant="headline-l" fontWeight="regular">
             {" "}
             Virk
           </Typography>{" "}
@@ -141,8 +141,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl px-3 py-10">
-        <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
+      <div className="mx-auto max-w-7xl px-3 py-10">
+        <Typography fontWeight="bold" customClassName="uppercase !text-primary-light !text-[15px]!tracking-widest">
           Our Values
         </Typography>
 
