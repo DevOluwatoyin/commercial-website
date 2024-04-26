@@ -67,7 +67,7 @@ const DarkNavbar = () => {
         <div className="flex w-1/2 items-center gap-5">
           <ButtonSm
             text="Email us"
-            customStyle="!w-1/3 text-primary-main border-white md:!w-1/2 hover:border-primary-main"
+            customStyle="!w-1/3 text-primary-main !font-bold border-white md:!w-1/2 hover:border-primary-main"
           />
           <ButtonLg
             text="Book a free consult"

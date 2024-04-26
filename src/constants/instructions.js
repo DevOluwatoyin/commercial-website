@@ -22,7 +22,7 @@ export const accidentInstructions = [
   {
     id: "05",
     title: "Avoid speaking to the insurance company",
-    more: "Until you have sought legal advice, which is free at Virk Personal Injury Law, don t speak to the insurance companies. If you do, keep notes of what was said and try to communicate via email so you have a written record.",
+    more: "Until you have sought legal advice, which is free at Virk Personal Injury Law, don't speak to the insurance companies. If you do, keep notes of what was said and try to communicate via email so you have a written record.",
   },
   {
     id: "06",

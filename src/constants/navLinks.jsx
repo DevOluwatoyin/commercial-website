@@ -217,5 +217,5 @@ export const offers = [
   "Hospital and in home visits",
   "Interpreters of any language",
   "Wheelchair accessible",
-  "You don t pay fees unless you win",
+  "You don't pay fees unless you win",
 ];

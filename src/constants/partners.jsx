@@ -17,7 +17,7 @@ export const stats = [
   },
   {
     value: "$3.4M",
-    category: "Brain and Orthapaedic Injuries",
+    category: "Brain and Orthopaedic Injuries",
   },
   {
     value: "$1.5M",
