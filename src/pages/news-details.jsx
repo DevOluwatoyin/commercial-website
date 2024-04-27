@@ -1,4 +1,3 @@
-import React from "react";
 import PageHeader from "../components/PageHeader";
 import Scan from "../assets/scan.jpg";
 import Typography from "../components/Typography";
@@ -6,8 +5,14 @@ import ContactForm from "../components/ContactForm";
 import caret from "../assets/caret-red.svg";
 import { Link } from "react-router-dom";
 import NewsLetter from "../components/Newsletter";
+import { useEffect } from "react";
 
 const NewsDetails = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <section>
       <PageHeader

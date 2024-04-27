@@ -1,4 +1,3 @@
-import React from "react";
 import AddIcon from "../assets/add-icon.svg";
 import Typography from "./Typography";
 import { useNavigate } from "react-router-dom";

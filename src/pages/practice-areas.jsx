@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import PageHeader from "../components/PageHeader";
 import RedBox from "../assets/red-box.svg";
 import { areasOfPractice } from "../constants/navLinks";
@@ -13,6 +13,11 @@ const PracticeAreas = () => {
   function handleClick(index) {
     setActiveIndex(index === activeIndex ? -1 : index);
   }
+
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section>

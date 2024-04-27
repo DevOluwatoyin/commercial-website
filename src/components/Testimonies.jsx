@@ -1,4 +1,3 @@
-import React from "react";
 import { ButtonSm } from "./Button";
 import ArrowRight from "../assets/arrow-right.svg";
 import Typography from "./Typography";

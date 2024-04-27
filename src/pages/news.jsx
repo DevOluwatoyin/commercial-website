@@ -1,4 +1,3 @@
-import React from "react";
 import RedBox from "../assets/red-box.svg";
 import PageHeader from "../components/PageHeader";
 import Typography from "../components/Typography";
@@ -6,8 +5,14 @@ import SingleNews from "../components/SingleNews";
 import { newsPost } from "../constants/partners";
 import { ButtonSm } from "../components/Button";
 import NewsLetter from "../components/Newsletter";
+import { useEffect } from "react";
 
 const News = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section>
       <PageHeader

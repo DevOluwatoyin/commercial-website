@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Typography from "../components/Typography";
 import NewsLetter from "../components/Newsletter";
 import Partner from "../components/Partner";
@@ -12,6 +12,10 @@ import Expectation from "../components/Expectation";
 import News from "../components/News";
 
 const Home = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Fragment>
       <section className="h-screen bg-black-700">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import ArrowRight from "../assets/arrow-right.svg";
 import ArrowLeft from "../assets/arrow-left.svg";
 import CarouselItem from "./CarouselItem";

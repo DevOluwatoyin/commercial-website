@@ -1,4 +1,3 @@
-import React from "react";
 import Typography from "./Typography";
 import { areasOfPractice } from "../constants/navLinks";
 import Image from "../assets/stat-img.png";

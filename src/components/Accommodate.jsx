@@ -1,4 +1,3 @@
-import React from "react";
 import Typography from "./Typography";
 import { offers } from "../constants/navLinks";
 import AccommodateImg from "../assets/accommodate.png";

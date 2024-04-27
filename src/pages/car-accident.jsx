@@ -1,12 +1,16 @@
-import React from "react";
 import PageHeader from "../components/PageHeader";
 import RedBox from "../assets/red-box.svg";
 import ContactForm from "../components/ContactForm";
 import caret from "../assets/caret-red.svg";
 import Typography from "../components/Typography";
 import { ButtonSm } from "../components/Button";
+import { useEffect } from "react";
 
 const CarAccident = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section>
       <PageHeader

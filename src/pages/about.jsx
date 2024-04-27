@@ -5,6 +5,7 @@ import Typography from "../components/Typography";
 import AboutImg from "../assets/about-img.png";
 import { reasonsToChoose, values } from "../constants/about";
 import { ButtonLg } from "../components/Button";
+import { useEffect } from "react";
 
 const ReasonsToChoose = ({ reasons }) => {
   return (
@@ -36,6 +37,11 @@ const ReasonsToChoose = ({ reasons }) => {
 };
 
 const About = () => {
+
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="bg-primary-dark pb-10">
       <div className="flex h-screen flex-col items-center justify-center gap-28 px-3 pt-20">

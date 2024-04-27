@@ -1,4 +1,3 @@
-import React from "react";
 import Typography from "./Typography";
 import StatImg from "../assets/stat-img.png";
 import { stats } from "../constants/partners";
