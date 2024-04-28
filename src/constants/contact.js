@@ -32,3 +32,24 @@ export const contactDetails = [
     cord2: "1.855.847.5529",
   },
 ];
+
+export const address = [
+  {
+    location: "Brampton",
+    add1: "2 Country Ct Blvd, Suite 433",
+    add2: "Brampton ON L6W 3X7",
+  },
+  {
+    location: "Burlington",
+    add1: "4145 North Service Rd, Suite 205",
+    add2: "Burlington ON L7L 4X6",
+  },
+  {
+    location: "Milton",
+    add1: "500 Steeles Ave E, Unit 3",
+    add2: "Milton ON L9T 3P7",
+  },
+];
+
+
+export const otherLocations = ["Mississauga", "Niagara Falls", "St. Catharines", "Toronto"]
