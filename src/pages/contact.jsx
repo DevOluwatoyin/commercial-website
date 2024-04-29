@@ -4,14 +4,14 @@ import Typography from "../components/Typography";
 import ContactForm from "../components/ContactForm";
 import Image from "../assets/caret-red.svg";
 import { address, otherLocations } from "../constants/contact";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import Dot from "../assets/dot.svg";
 import Add from "../assets/add-icon.svg";
 
 const Contact = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="bg-primary-dark pb-10">
       <div className="h-auto">
