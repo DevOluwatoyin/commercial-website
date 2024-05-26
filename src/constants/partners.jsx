@@ -23,10 +23,10 @@ export const stats = [
     value: "$1.5M",
     category: "Brain Injury in Head On Collision",
   },
-  {
-    value: "$1.0M",
-    category: "Motorcycle Accident",
-  },
+  // {
+  //   value: "$1.0M",
+  //   category: "Motorcycle Accident",
+  // },
 ];
 
 export const expectation = [

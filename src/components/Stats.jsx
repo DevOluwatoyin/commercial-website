@@ -5,26 +5,26 @@ import { stats } from "../constants/partners";
 const Stats = () => {
   return (
     <section className="bg-primary-500">
-      <div className="flex w-full flex-col justify-between gap-10 p-4 py-10 md:flex-row md:items-center md:p-20">
+      <div className="flex w-full flex-col justify-between gap-10 p-4 py-10 md:flex-row md:py-20 max-w-7xl mx-auto">
         <div className="space-y-5 md:w-1/2">
-          <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
+          <Typography fontWeight="bold" customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
             By the numbers
           </Typography>
           <Typography
             color="primary-dark"
             variant="headline-l"
-            fontWeight="regular"
+            fontWeight="medium"
             customClassName="md:max-w-xs"
           >
             This is how we make a
-            <Typography tag="span" variant="headline-l" fontWeight="regular">
+            <Typography tag="span" variant="headline-l" fontWeight="medium">
               {" "}
               difference
             </Typography>
             .
           </Typography>
-          <div>
-            <img src={StatImg} alt="" />
+          <div className="">
+            <img src={StatImg} alt="" width={500} />
             <small className="mt-4 inline-block max-w-sm text-[9px] text-primary-light">
               *Past results are not necessarily indicative of future results and
               the amount recovered and other litigation outcomes will vary
@@ -45,7 +45,7 @@ const Stats = () => {
               >
                 {stat.value}
               </Typography>
-              <Typography color="primary-dark" fontWeight="regular">
+              <Typography color="primary-dark" fontWeight="medium">
                 {stat.category}
               </Typography>
             </div>
