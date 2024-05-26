@@ -1,9 +1,10 @@
-export const ButtonSm = ({ text, customStyle }) => {
+export const ButtonSm = ({ text, customStyle, icon }) => {
   return (
     <button
       className={`w-full border-2 border-primary-main bg-white p-2 text-sm uppercase transition-all hover:bg-primary-main hover:text-white ${customStyle}`}
     >
       {text}
+      {icon ? <img src={icon} alt="" /> : null}
     </button>
   );
 };

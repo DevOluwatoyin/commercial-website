@@ -38,6 +38,7 @@ const AreasOfExpertise = () => {
           <div className="flex flex-col">
             {areasOfPractice.map((area, id) => (
               <Link
+              key={id}
                 to=""
                 className="border-t border-t-gray-200 py-3 text-title-m font-medium text-primary-light transition hover:text-primary-main"
               >
