@@ -4,20 +4,20 @@ import { accidentInstructions } from "../constants/instructions";
 
 const Instruction = () => {
   return (
-    <section className="px-3 py-10 md:px-20">
-      <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest mb-8">
+    <section className="px-3 py-10 max-w-[1440px] mx-auto">
+      <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest font-bold mb-8">
         First Steps after an accident
       </Typography>
       <div className="flex flex-col justify-between md:flex-row">
         <Typography
           color="primary-dark"
           variant="headline-l"
-          fontWeight="regular"
+          fontWeight="medium"
         >
           I have been injured. <br /> What should I do?
         </Typography>
         <Typography
-          fontWeight="regular"
+          fontWeight="semi-bold"
           customClassName="!text-primary-light text-[11px] md:max-w-[33rem]"
         >
           Virk Personal Injury Law is always available to explain your rights
@@ -37,14 +37,14 @@ const Instruction = () => {
               <Typography
                 color="primary-dark"
                 variant="headline-s"
-                fontWeight="regular"
+                fontWeight="medium"
                 customClassName="mb-7 max-w-[240px]"
               >
                 {each.title}
               </Typography>
               <Typography
                 fontWeight="regular"
-                customClassName="!text-primary-light text-[10px] md:max-w-[33rem]"
+                customClassName="!text-primary-dark text-[10px] md:max-w-[33rem]"
               >
                 {each.more}
               </Typography>
