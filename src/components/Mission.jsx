@@ -6,10 +6,7 @@ const Mission = () => {
     <section className="delivery h-[540px]">
       <div className="h-full bg-[#1612127a] px-2 py-10 md:p-20 md:pt-24">
         <div className="mx-auto flex h-full max-w-6xl flex-col justify-center gap-8 md:flex-row md:justify-between md:gap-14">
-          <Typography
-            customClassName="text-white text-headline-l md:text-display-m"
-            fontWeight="regular"
-          >
+          <Typography customClassName="text-white text-headline-l !font-medium md:text-display-m">
             We’re on a mission to deliver impactful and compassionate legal
             advocacy with integrity that’s second to none.
           </Typography>
