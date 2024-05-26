@@ -5,19 +5,19 @@ import Carousel from "./Carousel";
 
 const Testimonies = () => {
   return (
-    <section className="flex flex-col justify-between gap-10 p-4 py-10 md:flex-row md:px-16 md:py-16">
+    <section className="mx-auto flex max-w-[1440px] flex-col justify-between gap-10 p-4 py-10 md:flex-row md:px-16 md:py-16">
       <div className="md:w-[35%]">
-        <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
+        <Typography customClassName="uppercase font-bold !text-primary-light !text-[11px] !tracking-widest">
           What our clients are saying
         </Typography>
         <Typography
           color="primary-dark"
           variant="headline-l"
-          fontWeight="regular"
+          fontWeight="medium"
           customClassName="md:max-w-sm mt-5"
         >
           There is nothing better than knowing our clients are
-          <Typography tag="span" variant="headline-l" fontWeight="regular">
+          <Typography tag="span" variant="headline-l" fontWeight="medium">
             {" "}
             happy
           </Typography>
@@ -28,7 +28,7 @@ const Testimonies = () => {
             text="Read more Reviews"
             customStyle="!uppercase !text-[11px]"
           />
-          <img src={ArrowRight} alt="" />
+          <img src={ArrowRight} alt="" className="cursor-pointer" />
         </div>
       </div>
       <Carousel />

@@ -37,7 +37,7 @@ const Home = () => {
       <AreasOfExpertise />
 
       <section className="flex items-center justify-center bg-red-100 py-20">
-        <Typography customClassName="!text-[65px] px-2 mx-auto max-w-6xl text-center md:!text-[120px] !leading-[1.1]">
+        <Typography customClassName="!text-[65px] px-2 mx-auto max-w-6xl font-bold text-center md:!text-[120px] !leading-[1.1]">
           <q>They go above and beyond for you...</q>
         </Typography>
       </section>

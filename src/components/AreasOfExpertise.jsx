@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const AreasOfExpertise = () => {
   return (
-    <section className="space-y-10 px-4 md:px-20">
+    <section className="space-y-10 px-4 max-w-[1440px] mx-auto">
       <div className="flex flex-col justify-between gap-5 md:flex-row">
         <div className="space-y-5 py-8 md:py-10">
           <Typography
