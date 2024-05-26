@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="bg-red-100 p-4 py-12 pb-2 md:p-12">
         <div className="flex flex-col justify-between gap-5 md:flex-row">
           <div className="md:w-2/5">
-            <div className="space-y-5 md:w-2/3">
+            <div className="space-y-9 md:w-2/3">
               <Typography
                 variant="headline-l"
                 fontWeight="medium"
@@ -27,8 +27,8 @@ const Footer = () => {
                   No strings.
                 </Typography>
               </Typography>
-              <div className="flex gap-4">
-                <ButtonSm text="Email Us" />
+              <div className="flex gap-4 md:max-w-[70%]">
+                <ButtonSm text="Email Us" customStyle="font-medium" />
                 <ButtonLg text="Call us" />
               </div>
             </div>
@@ -41,7 +41,7 @@ const Footer = () => {
                 </Typography>
                 <div className="space-y-3">
                   {contactItems.map((contact, id) => (
-                    <div key={id} className="flex gap-3 items-start">
+                    <div key={id} className="flex items-start gap-3">
                       <img src={contact.icon} alt="" className="" />
                       <div>
                         <Typography
@@ -54,12 +54,11 @@ const Footer = () => {
                         </Typography>
                         <Typography
                           color="primary-dark"
-                          // tag="span"
                           fontWeight="regular"
                           customClassName="!text-[12px] lg:!text-sm"
                         >
                           {contact.line2}
-                        </Typography> 
+                        </Typography>
                         <Typography
                           color="primary-dark"
                           tag="span"
@@ -93,7 +92,7 @@ const Footer = () => {
                     <Link
                       href={firm.url}
                       key={id}
-                      className="text-[12px] text-primary-dark lg:text-sm"
+                      className="!text-[12px] transition hover:text-primary-main lg:!text-sm"
                     >
                       {firm.title}
                     </Link>
@@ -106,15 +105,13 @@ const Footer = () => {
                 </Typography>
                 <div className="flex flex-col space-y-2">
                   {areasOfService.map((service, id) => (
-                    <Typography
+                    <Link
+                      to=""
                       key={id}
-                      color="primary-dark"
-                      tag="span"
-                      fontWeight="regular"
-                      customClassName="!text-[12px] lg:!text-sm"
+                      className="!text-[12px] transition hover:text-primary-main lg:!text-sm"
                     >
                       {service}
-                    </Typography>
+                    </Link>
                   ))}
                 </div>
               </div>
