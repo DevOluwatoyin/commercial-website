@@ -1,23 +1,27 @@
 import Typography from "./Typography";
 import { areasOfPractice } from "../constants/navLinks";
-import Image from "../assets/stat-img.png";
+import Image from "../assets/hand.jpg";
 import Featured from "../assets/featured.jpg";
+import { Link } from "react-router-dom";
 
 const AreasOfExpertise = () => {
   return (
     <section className="space-y-10 px-4 md:px-20">
       <div className="flex flex-col justify-between gap-5 md:flex-row">
         <div className="space-y-5 py-8 md:py-10">
-          <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
+          <Typography
+            fontWeight="bold"
+            customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest"
+          >
             Areas of expertise
           </Typography>
           <Typography
             color="primary-dark"
             variant="headline-l"
-            fontWeight="regular"
+            fontWeight="medium"
           >
             This is how we can
-            <Typography tag="span" variant="headline-l" fontWeight="regular">
+            <Typography tag="span" variant="headline-l" fontWeight="medium">
               {" "}
               help
             </Typography>{" "}
@@ -25,7 +29,7 @@ const AreasOfExpertise = () => {
           </Typography>
           <Typography
             tag="span"
-            fontWeight="regular"
+            fontWeight="medium"
             customClassName="!text-primary-light text-[11px] inline-block md:max-w-sm"
           >
             At Virk, we focus exclusively on personal injury law and we stay
@@ -33,24 +37,23 @@ const AreasOfExpertise = () => {
           </Typography>
           <div className="flex flex-col">
             {areasOfPractice.map((area, id) => (
-              <Typography
-                key={id}
-                fontWeight="regular"
-                customClassName="!text-primary-light text-title-m border-t border-t-gray-200 py-3"
+              <Link
+                to=""
+                className="border-t border-t-gray-200 py-3 text-title-m font-medium text-primary-light transition hover:text-primary-main"
               >
                 {area.category}
-              </Typography>
+              </Link>
             ))}
           </div>
         </div>
-        <div>
+        <div className="w-1/2">
           <img src={Image} alt="" />
         </div>
       </div>
       <div className="flex flex-col items-center justify-between gap-5 pb-10 md:flex-row">
         <Typography
           color="primary-dark"
-          customClassName=" !text-headline-l !font-regular"
+          customClassName=" !text-headline-l !font-medium"
         >
           As seen on...
         </Typography>
