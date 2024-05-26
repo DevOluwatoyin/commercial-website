@@ -16,8 +16,8 @@ const NavItem = ({ items, onClick }) => {
     <li
       className={`underline-offset-4 transition-all hover:underline ${
         isActive
-          ? "text-primary-main underline hover:text-gray-100"
-          : "text-black hover:text-gray-100"
+          ? "text-primary-main underline hover:text-black-700"
+          : "text-black-700 hover:text-primary-main"
       }`}
     >
       <Link className="lg:text-base" to={items.path} onClick={onClick}>
@@ -58,15 +58,21 @@ const Navbar = () => {
       <Link to="/" className="block w-28">
         <img src={Logo} alt="logo" className="w-full" />
       </Link>
-      <div className="hidden items-center justify-between gap-20 md:flex md:w-4/5 lg:w-3/5">
+      <div className="hidden items-center justify-between gap-20 md:flex md:w-4/5 lg:w-3/5 xl:w-1/2">
         <ul className="flex h-full w-1/2 items-center justify-between">
           {navItems.map((items, index) => (
             <NavItem items={items} key={index} />
           ))}
         </ul>
         <div className="flex w-1/2 items-center gap-5">
-          <ButtonSm text="Email us" customStyle="!w-1/3 md:!w-1/2" />
-          <ButtonLg text="Book a free consult" customStyle="w-2/3" />
+          <ButtonSm
+            text="Email us"
+            customStyle="!w-1/3 md:!w-1/2 max-w-[100px]"
+          />
+          <ButtonLg
+            text="Book a free consult"
+            customStyle="w-2/3 max-w-[200px]"
+          />
         </div>
       </div>
       <button className="text-text-color flex md:hidden" onClick={handleToggle}>

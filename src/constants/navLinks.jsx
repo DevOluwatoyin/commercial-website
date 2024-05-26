@@ -10,7 +10,7 @@ import twitter from "../assets/x.svg";
 export const navItems = [
   {
     name: "Expertise",
-    path: "/",
+    path: "/areas-of-practice",
   },
   {
     name: "About",

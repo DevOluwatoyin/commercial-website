@@ -11,7 +11,7 @@
 }
 
 .fluid-text {
-  font-size: clamp(5rem, 26vw, 13rem);
+  font-size: clamp(3rem, 26vw, 13rem);
 }
 
 .delivery {

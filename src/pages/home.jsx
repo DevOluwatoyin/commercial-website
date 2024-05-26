@@ -18,15 +18,15 @@ const Home = () => {
   }, []);
   return (
     <Fragment>
-      <section className="h-screen bg-black-700">
-        <div className="flex h-screen !flex-col !justify-between px-5 py-20 md:px-10">
-          <p className="fluid-text font-bold leading-[1.1] text-white">
+      <section className="bg-black-700">
+        <div className="flex flex-col px-5 pt-20 pb-10 lg:pb-20 md:px-10 xl:max-w-[80%] mx-auto">
+          <p className="fluid-text leading-[0.8] font-bold text-white">
             Results
           </p>
-          <p className="fluid-text self-center font-bold leading-[1.1] text-white">
+          <p className="fluid-text leading-[0.8] self-center font-bold text-white">
             fair &
           </p>
-          <p className="fluid-text self-end font-bold leading-[1.1] text-white">
+          <p className="fluid-text leading-[0.8] self-end font-bold text-white">
             square.
           </p>
         </div>

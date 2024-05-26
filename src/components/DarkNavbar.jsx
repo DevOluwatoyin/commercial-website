@@ -16,8 +16,8 @@ const NavItem = ({ items, onClick }) => {
     <li
       className={`underline-offset-4 transition-all hover:underline ${
         isActive
-          ? "text-primary-main underline hover:text-gray-100"
-          : "text-white hover:text-gray-100"
+          ? "text-primary-main underline hover:text-white"
+          : "text-white hover:text-primary-main"
       }`}
     >
       <Link className="lg:text-base" to={items.path} onClick={onClick}>
@@ -67,11 +67,11 @@ const DarkNavbar = () => {
         <div className="flex w-1/2 items-center gap-5">
           <ButtonSm
             text="Email us"
-            customStyle="!w-1/3 text-primary-main !uppercase !font-bold border-white md:!w-1/2 hover:border-primary-main"
+            customStyle="!w-1/3 text-primary-main border-white md:!w-1/2 hover:border-primary-main"
           />
           <ButtonLg
             text="Book a free consult"
-            customStyle="w-2/3 !uppercase hover:border-white"
+            customStyle="w-2/3 hover:border-white"
           />
         </div>
       </div>
