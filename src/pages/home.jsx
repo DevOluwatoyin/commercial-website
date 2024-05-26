@@ -12,21 +12,20 @@ import Expectation from "../components/Expectation";
 import News from "../components/News";
 
 const Home = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <Fragment>
       <section className="bg-black-700">
-        <div className="flex flex-col px-5 pt-20 pb-10 lg:pb-20 md:px-10 xl:max-w-[80%] mx-auto">
-          <p className="fluid-text leading-[0.8] font-bold text-white">
+        <div className="mx-auto flex flex-col px-5 pb-10 pt-20 md:px-10 lg:pb-20 xl:max-w-[80%]">
+          <p className="fluid-text font-bold leading-[0.8] text-white">
             Results
           </p>
-          <p className="fluid-text leading-[0.8] self-center font-bold text-white">
+          <p className="fluid-text self-center font-bold leading-[0.8] text-white">
             fair &
           </p>
-          <p className="fluid-text leading-[0.8] self-end font-bold text-white">
+          <p className="fluid-text self-end font-bold leading-[0.8] text-white">
             square.
           </p>
         </div>
@@ -50,9 +49,9 @@ const Home = () => {
 
       <Expectation />
 
-      <News />
-
       <Accommodate />
+
+      <News />
 
       <NewsLetter />
 

@@ -5,14 +5,14 @@ import Typography from "./Typography";
 
 const News = () => {
   return (
-    <section className="px-4 py-10 md:p-20">
-      <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
+    <section className="mx-auto max-w-[1440px] px-4 py-10">
+      <Typography customClassName="uppercase !text-primary-light font-bold !text-[11px] !tracking-widest">
         Latest from Virk
       </Typography>
       <Typography
         color="primary-dark"
         variant="headline-l"
-        fontWeight="regular"
+        fontWeight="medium"
         customClassName="my-5"
       >
         News

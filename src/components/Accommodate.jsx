@@ -1,17 +1,18 @@
 import Typography from "./Typography";
 import { offers } from "../constants/navLinks";
 import AccommodateImg from "../assets/accommodate.png";
+import { Link } from "react-router-dom";
 
 const Accommodate = () => {
   return (
-    <section className="space-y-10 px-4 py-10 md:px-20">
+    <section className="mx-auto max-w-[1440px] space-y-10 px-4 py-10">
       <Typography
         color="primary-dark"
         variant="headline-l"
-        fontWeight="regular"
+        fontWeight="semi-bold"
       >
         We
-        <Typography tag="span" variant="headline-l" fontWeight="regular">
+        <Typography tag="span" variant="headline-l" fontWeight="semi-bold">
           {" "}
           accommodate
         </Typography>{" "}
@@ -23,13 +24,13 @@ const Accommodate = () => {
         </div>
         <div className="flex flex-col border-b border-b-gray-200 md:w-1/2">
           {offers.map((offer, id) => (
-            <Typography
+            <Link
+              to=""
               key={id}
-              fontWeight="regular"
-              customClassName="!text-primary-light text-title-m border-t border-t-gray-200 py-4"
+              className="border-t border-t-gray-200 py-4 text-title-m font-medium transition text-primary-light hover:text-primary-main"
             >
               {offer}
-            </Typography>
+            </Link>
           ))}
         </div>
       </div>
