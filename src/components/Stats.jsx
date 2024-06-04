@@ -4,10 +4,13 @@ import { stats } from "../constants/partners";
 
 const Stats = () => {
   return (
-    <section className="bg-primary-500">
-      <div className="flex w-full flex-col justify-between gap-10 p-4 py-10 md:flex-row md:py-20 max-w-7xl mx-auto">
+    <section className="relative bg-primary-500">
+      <div className="mx-auto flex w-full max-w-7xl  flex-col justify-between gap-10 p-4 py-10 md:flex-row md:py-20 lg:w-[90%]">
         <div className="space-y-5 md:w-1/2">
-          <Typography fontWeight="bold" customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest">
+          <Typography
+            fontWeight="bold"
+            customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest"
+          >
             By the numbers
           </Typography>
           <Typography

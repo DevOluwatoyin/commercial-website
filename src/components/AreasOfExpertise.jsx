@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const AreasOfExpertise = () => {
   return (
-    <section className="space-y-10 px-4 max-w-[1440px] mx-auto">
+    <section className="mx-auto max-w-[1440px] space-y-10 px-4 lg:w-[90%]">
       <div className="flex flex-col justify-between gap-5 md:flex-row">
         <div className="space-y-5 py-8 md:py-10">
           <Typography
@@ -38,7 +38,7 @@ const AreasOfExpertise = () => {
           <div className="flex flex-col">
             {areasOfPractice.map((area, id) => (
               <Link
-              key={id}
+                key={id}
                 to=""
                 className="border-t border-t-gray-200 py-3 text-title-m font-medium text-primary-light transition hover:text-primary-main"
               >

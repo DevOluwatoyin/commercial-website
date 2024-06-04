@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Accommodate = () => {
   return (
-    <section className="mx-auto max-w-[1440px] space-y-10 px-4 py-10">
+    <section className="mx-auto max-w-[1440px] space-y-10 px-4 py-10 lg:w-[90%]">
       <Typography
         color="primary-dark"
         variant="headline-l"
@@ -27,7 +27,7 @@ const Accommodate = () => {
             <Link
               to=""
               key={id}
-              className="border-t border-t-gray-200 py-4 text-title-m font-medium transition text-primary-light hover:text-primary-main"
+              className="border-t border-t-gray-200 py-4 text-title-m font-medium text-primary-light transition hover:text-primary-main"
             >
               {offer}
             </Link>

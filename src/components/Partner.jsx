@@ -3,7 +3,7 @@ import { partners } from "../constants/partners";
 
 const Partner = () => {
   return (
-    <section className="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-5 bg-white px-4 py-20 md:flex-row">
+    <section className="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-5 bg-white px-4 py-20 md:flex-row lg:w-[90%]">
       <div className="md:w-2/5">
         <Typography
           variant="headline-m"

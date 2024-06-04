@@ -3,8 +3,8 @@ import { ButtonLg } from "./Button";
 
 const NewsLetter = () => {
   return (
-    <section className="bg-black-700 px-4 py-12 h-72">
-      <div className="mx-auto max-w-7xl flex flex-col justify-between h-full">
+    <section className="h-72 bg-black-700 px-4 py-12">
+      <div className="mx-auto flex h-full max-w-7xl flex-col justify-between lg:w-[90%]">
         <Typography
           variant="display-s"
           fontWeight="regular"

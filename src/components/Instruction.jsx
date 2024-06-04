@@ -3,7 +3,7 @@ import { accidentInstructions } from "../constants/instructions";
 
 const Instruction = () => {
   return (
-    <section className="px-3 py-10 max-w-[1440px] mx-auto">
+    <section className="mx-auto max-w-[1440px] px-3 py-10 lg:w-[90%]">
       <Typography customClassName="uppercase !text-primary-light !text-[11px] !tracking-widest font-bold mb-8">
         First Steps after an accident
       </Typography>

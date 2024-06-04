@@ -20,11 +20,10 @@ export const ButtonLg = ({ text, customStyle }) => {
   );
 };
 
-export const FloatingBtn = () => {
+export const FloatingBtn = ({ floatStyle }) => {
   return (
-    <ButtonLg
-      customStyle="!w-20 !text-[10px] -rotate-90 z-10 !uppercase fixed -right-5 top-[50%] md:right-0 md:!w-28 md:!h-28 md:rotate-0 md:!text-sm hover:!border-white"
-      text="contact us"
-    />
+    <button className={`fixed -right-5 top-[50%] z-10 !w-20 -rotate-90 border-2 border-primary-main bg-primary-main p-2 !text-[10px] text-sm uppercase text-white transition-all hover:!border-white hover:bg-white hover:text-black-700 md:right-0 md:!h-28 md:!w-28 md:rotate-0 md:!text-sm ${floatStyle}`}>
+      contact us
+    </button>
   );
 };

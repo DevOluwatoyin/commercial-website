@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <section className="overflow-hidden">
       <div className="bg-red-100 p-4 py-12 pb-2 md:p-12">
-        <div className="flex flex-col justify-between gap-5 md:flex-row">
+        <div className="mx-auto flex flex-col justify-between gap-5 md:flex-row lg:w-[95%] xl:max-w-full">
           <div className="md:w-2/5">
             <div className="space-y-9 md:w-2/3">
               <Typography

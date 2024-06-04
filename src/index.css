@@ -11,7 +11,7 @@
 }
 
 .fluid-text {
-  font-size: clamp(3rem, 26vw, 13rem);
+  font-size: clamp(3rem, 26vw, 10rem);
 }
 
 .delivery {
@@ -34,4 +34,11 @@
   opacity: 1;
   transform: translateY(0);
   order: -1;
+}
+
+
+@media screen and (min-width: 1400px) {
+  .fluid-text {
+    font-size: clamp(3rem, 26vw, 13rem);
+  }
 }

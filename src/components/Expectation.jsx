@@ -6,7 +6,7 @@ import { expectation } from "../constants/partners";
 const Expectations = () => {
   return (
     <section className="px-2">
-      <div className="mx-auto max-w-[1400px] border border-primary-main md:grid md:grid-cols-7 md:grid-rows-2">
+      <div className="mx-auto max-w-[1400px] border border-primary-main md:grid md:grid-cols-7 md:grid-rows-2 lg:w-[90%]">
         <div className="p-8 md:col-span-2 md:row-span-2 md:pb-0">
           <Typography
             fontWeight="bold"

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { FloatingBtn } from "../components/Button";
+// import { FloatingBtn } from "../components/Button";
 import DarkNavbar from "../components/DarkNavbar";
 import { routeOptions } from "../constants/navLinks";
 
@@ -22,7 +22,6 @@ const Layout = () => {
   return (
     <>
       {useWhiteNav ? <Navbar /> : <DarkNavbar />}
-      <FloatingBtn />
       <Outlet />
       <Footer />
     </>

@@ -4,7 +4,7 @@ import Typography from "./Typography";
 
 const News = () => {
   return (
-    <section className="mx-auto max-w-[1440px] px-4 py-10">
+    <section className="mx-auto max-w-[1440px] px-4 py-10 lg:w-[90%]">
       <Typography customClassName="uppercase !text-primary-light font-bold !text-[11px] !tracking-widest">
         Latest from Virk
       </Typography>
