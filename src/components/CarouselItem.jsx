@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import Typography from "./Typography";
 import stars from "../assets/stars.svg";
 

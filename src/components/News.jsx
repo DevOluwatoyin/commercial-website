@@ -1,4 +1,3 @@
-import React from "react";
 import { newsPost } from "../constants/partners";
 import SingleNews from "./SingleNews";
 import Typography from "./Typography";

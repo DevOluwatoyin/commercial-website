@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import Typography from "./Typography";
 
 const PageHeader = ({ image, heading, summary, customStyle }) => {

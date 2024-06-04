@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import Select from "./Select";
 import { ButtonLg } from "./Button";
 

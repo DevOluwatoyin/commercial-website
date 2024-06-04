@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import AboutTxt from "../assets/about-header-txt.svg";
 import Stars from "../assets/white-stars.svg";
 import Quote from "../assets/quote.svg";

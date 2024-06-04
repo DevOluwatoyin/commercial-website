@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import openIcon from "../assets/open.svg";
 import closeIcon from "../assets/close.svg";

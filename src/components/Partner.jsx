@@ -1,4 +1,3 @@
-import React from "react";
 import Typography from "./Typography";
 import { partners } from "../constants/partners";
 

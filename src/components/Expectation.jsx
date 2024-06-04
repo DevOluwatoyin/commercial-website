@@ -1,4 +1,3 @@
-import React from "react";
 import Typography from "./Typography";
 import { ButtonSm } from "./Button";
 import ArrowRight from "../assets/arrow-right.svg";
@@ -21,12 +20,12 @@ const Expectations = () => {
             fontWeight="medium"
             customClassName="md:max-w-sm mt-5"
           >
-            You focus on what's
+            You focus on what&apos;s
             <Typography tag="span" variant="headline-l" fontWeight="medium">
               {" "}
               important,
             </Typography>{" "}
-            we'll square away the rest.
+            we&apos;ll square away the rest.
           </Typography>
           <div className="mt-10 flex max-w-[250px] items-center md:mt-20">
             <ButtonSm
