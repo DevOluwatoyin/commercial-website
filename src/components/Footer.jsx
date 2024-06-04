@@ -8,6 +8,7 @@ import {
   socials,
 } from "../constants/navLinks";
 import { Link } from "react-router-dom";
+import FooterLogo from "../assets/footer-logo.svg";
 
 const Footer = () => {
   return (
@@ -143,10 +144,8 @@ const Footer = () => {
           All Rights Reserved.
         </small>
       </div>
-      <div className="relative h-[400px] w-full bg-primary-main">
-        <p className="absolute -bottom-5 -right-5 text-5xl font-[700] uppercase tracking-[15px] text-white md:text-8xl">
-          Virk
-        </p>
+      <div className="relative h-[464px] w-full bg-primary-main overflow-visible">
+        <img src={FooterLogo} alt="Virk" className="absolute right-0" />
       </div>
     </section>
   );
