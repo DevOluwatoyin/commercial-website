@@ -20,10 +20,6 @@ export default {
       black: "900",
     },
     extend: {
-      colors: {
-        "gray-sm": "#c1c1c1",
-        "box-shadow": "0 2px 8px rgba(0,0,0,.1)",
-      },
       fontSize: {
         "display-l": [
           "57px",
@@ -79,6 +75,8 @@ export default {
       colors: {
         "off-white": "#FCFCFC",
         "off-black": "#14142B",
+        "box-shadow": "0 2px 8px rgba(0,0,0,.1)",
+        "transparent-white": "rgba(255, 255, 255, 0.2)",
         primary: {
           main: "#E81D2C",
           dark: "#161212",
@@ -99,6 +97,7 @@ export default {
           700: "#000000",
         },
         gray: {
+          sm: "#c1c1c1",
           100: "#c1c1c1",
           200: "#BFBFBF",
           300: "#828282",

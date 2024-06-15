@@ -28,35 +28,18 @@ export const reasonsToChoose = [
 export const values = [
   {
     value: "Excellence",
-    desc: `We strive to provide top quality representation to our clients including staying up to date on the latest laws and legal strategies, having a network of highly regarded professionals to assist with aspect of the case and a willingness to go to trial`,
+    desc: `We strive to provide top-quality representation to our clients including staying up to date on the latest laws and legal strategies, having a network of highly regarded professionals to assist with each aspect of the case and a willingness to go to trial.`,
   },
   {
     value: "Compassion",
-    desc: `Personal injury cases often involve clients who are going through a difficult and stressful time. We prioritize empathy and understanding, offering emotional support and timely responses. This value extends to our firm culture, fostering patience and support in all interactions, both with clients and among ourselves.`,
-  },
-  {
-    value: "Collaboration",
-    desc: `We promote collaboration with clients, colleagues, and stakeholders to achieve the best possible outcome. We believe teamwork and knowledge sharing yield stronger relationships and results. Committed to a culture of openness, support, and communication, we ensure everyone feels heard and valued in our environment.`,
-  },
-  {
-    value: "Positivity",
-    desc: `Each team members is responsible for bringing a positive energy to the firm environment. Toxic communications are not acceptable.`,
+    desc: `Personal injury cases often involve clients who are going through a difficult and stressful time. We prioritize empathy and understanding, offering emotional support and timely responses.`,
   },
   {
     value: "Integrity",
     desc: `Integrity is our compass; we act with unwavering honesty, professionalism, and ethical conduct. Our commitment to upholding these values is a testament to our esteemed reputation within the community, guiding every action we take.`,
   },
   {
-    value: "Justice and Fairness",
-    desc: `We champion fairness and justice for our clients, whether securing rightful compensation or advocating for systemic change. This commitment to fairness extends to our internal interactions at the firm.`,
-  },
-  {
     value: "Social Responsibility",
-    desc: `We acknowledge our responsibility as engaged community members in Hamilton and the surrounding areas, actively pursuing opportunities for
-meaningful contributions.`,
-  },
-  {
-    value: "Diversity and Inclusion",
-    desc: `We are committed to promoting diversity and inclusion within the firm and in the legal professional as a whole.`,
+    desc: `We acknowledge our responsibility as engaged community members in Hamilton and the surrounding areas, actively pursuing opportunities for meaningful contributions..`,
   },
 ];

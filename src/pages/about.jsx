@@ -14,22 +14,19 @@ const ReasonsToChoose = ({ reasons }) => {
       <div className="md:w-1/2">
         <Typography
           customClassName="!text-3xl !text-white md:w-2/3"
-          fontWeight="regular"
+          fontWeight="medium"
         >
           {reasons.title}
         </Typography>
       </div>
-      <div className="md:w-1/2 space-y-5">
+      <div className="space-y-5 md:w-1/2">
         <Typography
           customClassName="mb-2 !text-lg !text-white"
           fontWeight="regular"
         >
           {reasons.text1}
         </Typography>
-        <Typography
-          customClassName="!text-lg !text-white"
-          fontWeight="regular"
-        >
+        <Typography customClassName="!text-lg !text-white" fontWeight="regular">
           {reasons.text2}
         </Typography>
       </div>
@@ -38,38 +35,42 @@ const ReasonsToChoose = ({ reasons }) => {
 };
 
 const About = () => {
-
-  
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <section className="bg-primary-dark pb-10">
-      <div className="flex h-screen flex-col items-center justify-center gap-28 px-3 pt-20">
-        <p className="max-w-2xl text-center text-xl text-white md:text-3xl">
+      <div className="flex h-screen flex-col items-center justify-center gap-28 overflow-hidden px-3 pt-20">
+        <p className="max-w-2xl text-center text-xl font-medium text-white md:text-3xl">
           With every client, we are driven by a singular mission: to champion
           our their rights with unwavering dedication and integrity.
         </p>
-        <img src={AboutTxt} alt="About" className="self-start" />
+        <img
+          src={AboutTxt}
+          alt="About"
+          className="-ml-8 w-[700px] self-start"
+        />
       </div>
 
-      <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 px-3 py-8 md:flex-row md:items-center md:py-14 lg:items-start">
-        <div className="space-y-5 px-1 md:w-1/2">
+      <div className="relative ml-auto flex max-w-7xl flex-col justify-between gap-5 py-8 pl-3 md:flex-row md:items-center md:py-14 lg:items-start">
+        <div className="absolute z-10 w-[800px] space-y-5 px-1">
           <Typography
-            color=""
-            customClassName="uppercase !text-[11px] mb-1 !text-gray-300"
-            fontWeight="medium"
+            customClassName="uppercase !text-lg mb-1 !text-gray-300"
+            fontWeight="bold"
           >
             From square one
           </Typography>
           <Typography
-            customClassName="mb-1 !text-xl !text-white md:!text-3xl"
-            fontWeight="regular"
+            customClassName="mb-1 !text-xl !text-white md:!text-[45px] !leading-[54px] relative max-w-[800px] tracking-tight"
+            fontWeight="medium"
           >
             Virk Personal Injury Law has been providing Hamilton and the
             surrounding areas with personal injury law services since 2013.
           </Typography>
-          <Typography customClassName="mb-1 !text-lg !text-white" fontWeight="regular">
+          <Typography
+            customClassName="mb-1 !text-lg !text-white md:!text-[21px] max-w-[600px]"
+            fontWeight="regular"
+          >
             Personal Injury Law can be very complex and overwhelming. With a
             sharp focus on personal injury cases, we navigate the legal
             landscape with precision and tenacity, ensuring that our clients
@@ -79,7 +80,7 @@ const About = () => {
           </Typography>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="ml-auto md:w-[43%]">
           <img
             src={AboutImg}
             className="w-full grayscale md:self-start"
@@ -90,19 +91,23 @@ const About = () => {
 
       <div className="mx-auto max-w-7xl px-3">
         <Typography
-          customClassName="uppercase !text-[15px] mb-1 !text-gray-300"
+          customClassName="uppercase !text-lg mb-1 !text-gray-300"
           fontWeight="bold"
         >
           Setting a high bar
         </Typography>
 
         <Typography
-          // variant="headline-l"
-          fontWeight="regular"
+          fontWeight="medium"
           customClassName="!text-white !text-5xl border-b border-b-gray-200 py-14"
         >
           This is why you want
-          <Typography tag="span" customClassName="!text-5xl" variant="headline-l" fontWeight="regular">
+          <Typography
+            tag="span"
+            customClassName="!text-5xl"
+            variant="headline-l"
+            fontWeight="medium"
+          >
             {" "}
             Virk
           </Typography>{" "}
@@ -116,7 +121,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mx-auto my-16 flex max-w-7xl flex-col justify-between gap-5 bg-primary-main px-3 py-20 md:flex-row md:px-10 md:justify-start md:gap-20 lg:pl-10">
+      <div className="mx-auto my-16 flex max-w-7xl flex-col justify-between gap-5 bg-primary-main px-3 py-20 md:flex-row md:justify-start md:gap-20 md:px-10 lg:pl-10">
         <div className="space-y-2">
           <Typography
             customClassName="!text-white !text-lg"
@@ -132,7 +137,7 @@ const About = () => {
             A year ago
           </Typography>
         </div>
-        <div className="flex items-start gap-3 md:w-[70%] lg:gap-10 lg:w-[80%]">
+        <div className="flex items-start gap-3 md:w-[70%] lg:w-[80%] lg:gap-10">
           <img src={Quote} alt="Quote" className="w-4 md:w-16 lg:w-24" />
           <Typography
             customClassName="!text-white md:!text-2xl lg:!text-4xl"
@@ -148,30 +153,35 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-3 py-10">
-        <Typography fontWeight="bold" customClassName="uppercase !text-primary-light !text-[15px]!tracking-widest">
+      <div className="py-10">
+        <Typography
+          customClassName="uppercase !text-gray-300 !text-lg px-3 md:pl-10"
+          fontWeight="bold"
+        >
           Our Values
         </Typography>
-
         <Typography
           variant="headline-m"
-          fontWeight="regular"
-          customClassName="!text-white mt-5"
+          fontWeight="medium"
+          customClassName="!text-white mt-5 px-3 md:pl-10"
         >
           Delivering results, fair and square.
         </Typography>
         <Typography
           fontWeight="regular"
-          customClassName="!text-primary-light text-[10px] mt-5 md:max-w-sm"
+          customClassName="!text-white text-lg mt-5 md:max-w-md px-3 md:pl-10"
         >
           For us, integrity is more than just a word it’s the cornerstone of
           everything we do. Grounded in our commitment to fairness and
           transparency, our core values drive everything we do.
         </Typography>
 
-        <div className="mx-auto mt-14 grid max-w-7xl border border-primary-main sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-14 grid border-y border-primary-main sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {values.map((value, id) => (
-            <div key={id} className="border border-primary-main p-4">
+            <div
+              key={id}
+              className={`border-r border-primary-main p-4 ${id === values.length - 1 ? "border-r-0" : ""}`}
+            >
               <Typography
                 variant="title-l"
                 fontWeight="regular"
