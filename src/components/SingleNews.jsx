@@ -13,17 +13,24 @@ const SingleNews = ({ heading, img, date, title }) => {
     <div className="flex-1">
       <Typography
         color="primary-dark"
-        customClassName="uppercase !text-[11px] mb-1 tracking-widest"
-        fontWeight="bold"
+        customClassName="uppercase text-md md:text-[22px] mb-3"
+        fontWeight="medium"
       >
         {heading}
       </Typography>
       <div className="relative">
         <img src={img} alt="" className="" />
-        <img src={AddIcon} alt="" className="absolute bottom-0 right-0 cursor-pointer" />
+        <img
+          src={AddIcon}
+          alt=""
+          className="absolute bottom-0 right-0 cursor-pointer"
+        />
       </div>
       <div>
-        <Typography fontWeight="medium" customClassName="!text-primary-dark !text-xs my-3">
+        <Typography
+          fontWeight="medium"
+          customClassName="!text-primary-dark text-xs my-3 md:text-lg"
+        >
           {date}
         </Typography>
         <Typography

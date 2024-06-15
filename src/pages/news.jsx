@@ -8,7 +8,6 @@ import NewsLetter from "../components/Newsletter";
 import { useEffect } from "react";
 
 const News = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -26,12 +25,12 @@ const News = () => {
           <Typography
             color="primary-dark"
             variant="headline-m"
-            fontWeight="regular"
+            fontWeight="medium"
             customClassName="mb-10"
           >
             All Posts
           </Typography>
-          <div className="border-b border-primary-light">
+          <div className="border-b border-primary-light pb-10">
             <div className="flex flex-col gap-4 md:flex-row">
               {newsPost.map((post, id) => (
                 <SingleNews
@@ -44,7 +43,7 @@ const News = () => {
               ))}
             </div>
 
-            {/* <p className="mb-10 mt-14 text-right">Pagination</p> */}
+            <p className="text-right">Pagination</p>
           </div>
         </div>
 
