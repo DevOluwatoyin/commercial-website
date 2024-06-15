@@ -51,15 +51,6 @@ const Contact = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-          {/* <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.0774130437717!2d-80.47859637613303!3d43.458981000000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf4f2b9473109%3A0xa1d23131ef6a5948!2sVIRK%20LAW!5e0!3m2!1sen!2sng!4v1714344921043!5m2!1sen!2sng"
-            width={600}
-            height={450}
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe> */}
         </div>
       </div>
 
@@ -110,7 +101,7 @@ const Contact = () => {
       <div className="mx-auto mt-10 flex max-w-7xl flex-col justify-between gap-5 bg-white px-3 py-10 md:flex-row md:px-14 lg:p-20">
         <Typography
           color="primary-dark"
-          fontWeight="bold"
+          fontWeight="medium"
           customClassName="md:!text-5xl md:max-w-xs"
         >
           Book a free consultation.
