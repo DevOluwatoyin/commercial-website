@@ -20,7 +20,7 @@ const PageHeader = ({ image, heading, summary, customStyle }) => {
         </Typography>
         <Typography
           color="primary-dark"
-          variant="title-m"
+          variant="title-l"
           fontWeight="regular"
           customClassName="max-w-xl"
         >

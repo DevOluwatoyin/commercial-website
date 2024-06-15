@@ -7,7 +7,6 @@ import { ButtonSm } from "../components/Button";
 import { useEffect } from "react";
 
 const CarAccident = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -19,11 +18,12 @@ const CarAccident = () => {
         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in lorem sed arcu varius porttitor. Fusce pretium orci a mollis sollicitudin. Mauris vulputate orci eget diam dictum aliquet"
       />
 
-      <div className="mx-auto my-10 flex max-w-7xl flex-col justify-between gap-8 md:flex-row">
+      <div className="mx-auto my-10 flex max-w-[1200px] flex-col justify-between gap-8 md:flex-row xl:max-w-7xl">
         <div className="w-1/2">
           <Typography
             color="primary-dark"
-            customClassName="!text-title-l !font-regular mb-5"
+            customClassName="text-lg  md:text-xl mb-5"
+            fontWeight="medium"
           >
             Levelling the field between you and the insurance company.
           </Typography>
@@ -32,7 +32,7 @@ const CarAccident = () => {
             <Typography
               color="primary-dark"
               fontWeight="regular"
-              customClassName="!text-[13px] leading-[1.8]"
+              customClassName="text-md md:text-[21px] leading-[30px]"
             >
               The aftermath of a car accident can be overwhelming as you have
               entered unfamiliar territory and no doubt have a lot of unanswered
@@ -44,7 +44,7 @@ const CarAccident = () => {
             <Typography
               color="primary-dark"
               fontWeight="regular"
-              customClassName="!text-[13px] leading-[1.8]"
+              customClassName="text-md md:text-[21px] leading-[30px]"
             >
               Insurance companies scrutinize and defend claims vigorously and
               are looking out for their own interests, not yours. There are many
@@ -59,7 +59,7 @@ const CarAccident = () => {
             <Typography
               color="primary-dark"
               fontWeight="regular"
-              customClassName="!text-[13px] leading-[1.8]"
+              customClassName="text-md md:text-[21px] leading-[30px]"
             >
               We will explain your rights in simple terms and take on the
               insurance companies and at-fault parties so that you can focus on
@@ -70,7 +70,8 @@ const CarAccident = () => {
           <div className="space-y-3 border-b border-b-primary-light pb-7">
             <Typography
               color="primary-dark"
-              customClassName="!text-title-l !font-regular my-5"
+              customClassName="text-xl my-5 md:text-2xl"
+              fontWeight="medium"
             >
               Your rights after a car accident.
             </Typography>
@@ -78,24 +79,24 @@ const CarAccident = () => {
             <Typography
               color="primary-dark"
               fontWeight="regular"
-              customClassName="!text-[13px] leading-[1.8]"
+              customClassName="text-md md:text-[21px] leading-[30px]"
             >
               If you were injured in a motor vehicle accident, whether you were
               a driver, passenger, cyclist or a pedestrian, you have two sets of
               rights:
             </Typography>
 
-            <ol className="list-decimal space-y-4">
+            <ol className="marker:text-md list-decimal space-y-4 marker:font-bold">
               <li>
                 <Typography
                   color="primary-dark"
-                  customClassName="!text-[13px] leading-[1.8]"
+                  customClassName="text-md md:text-[21px] leading-[30px]"
                 >
                   Accident Benefits:{" "}
                   <Typography
                     color="primary-dark"
                     fontWeight="regular"
-                    customClassName="!text-[13px] leading-[1.8]"
+                    customClassName="text-md md:text-[21px] leading-[30px]"
                     tag="span"
                   >
                     No-fault benefits that are payable immediately to ensure
@@ -105,15 +106,18 @@ const CarAccident = () => {
                   </Typography>
                 </Typography>
 
-                <ul className="list-disc">
+                <ul
+                  className="marker:text-md
+                list-disc space-y-4 marker:text-primary-main md:ml-5 md:mt-4 md:marker:text-[21px]"
+                >
                   <li>
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       <Typography
-                        customClassName="!text-[13px] leading-[1.8]"
+                        customClassName="text-md md:text-[21px] leading-[30px]"
                         tag="span"
                       >
                         Income Replacement Benefits
@@ -125,10 +129,10 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       <Typography
-                        customClassName="!text-[13px] leading-[1.8]"
+                        customClassName="text-md md:text-[21px] leading-[30px]"
                         tag="span"
                       >
                         Non-Earner Benefits
@@ -141,10 +145,10 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       <Typography
-                        customClassName="!text-[13px] leading-[1.8]"
+                        customClassName="text-md md:text-[21px] leading-[30px]"
                         tag="span"
                       >
                         Medical and Rehabilitation Benefits
@@ -159,10 +163,10 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       <Typography
-                        customClassName="!text-[13px] leading-[1.8]"
+                        customClassName="text-md md:text-[21px] leading-[30px]"
                         tag="span"
                       >
                         Medical and Rehabilitation Benefits
@@ -177,10 +181,10 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       <Typography
-                        customClassName="!text-[13px] leading-[1.8]"
+                        customClassName="text-md md:text-[21px] leading-[30px]"
                         tag="span"
                       >
                         Attendant Care Benefits
@@ -192,10 +196,10 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       <Typography
-                        customClassName="!text-[13px] leading-[1.8]"
+                        customClassName="text-md md:text-[21px] leading-[30px]"
                         tag="span"
                       >
                         House Keeping and Home Maintenance Benefits
@@ -207,10 +211,10 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       <Typography
-                        customClassName="!text-[13px] leading-[1.8]"
+                        customClassName="text-md md:text-[21px] leading-[30px]"
                         tag="span"
                       >
                         Caregiver Benefits
@@ -222,10 +226,10 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       <Typography
-                        customClassName="!text-[13px] leading-[1.8]"
+                        customClassName="text-md md:text-[21px] leading-[30px]"
                         tag="span"
                       >
                         Other Expenses
@@ -240,13 +244,13 @@ const CarAccident = () => {
               <li>
                 <Typography
                   color="primary-dark"
-                  customClassName="!text-[13px] leading-[1.8]"
+                  customClassName="text-md md:text-[21px] leading-[30px]"
                 >
                   A claim for damages against those who caused injury to you:
                   <Typography
                     color="primary-dark"
                     fontWeight="regular"
-                    customClassName="!text-[13px] leading-[1.8]"
+                    customClassName="text-md md:text-[21px] leading-[30px]"
                     tag="span"
                   >
                     We can file a personal injury lawsuit and pursue the
@@ -255,12 +259,15 @@ const CarAccident = () => {
                   </Typography>
                 </Typography>
 
-                <ul className="list-disc">
+                <ul
+                  className="marker:text-md
+                list-disc space-y-6 md:ml-5 md:mt-4 md:marker:text-[21px]"
+                >
                   <li>
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       Pain and suffering damages (for loss of your enjoyment of
                       life)
@@ -270,7 +277,7 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       Loss of future earnings (financial loss due to the
                       inability to work, reduced earning capacity and loss of
@@ -281,7 +288,7 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       Future care costs (medical care, rehabilitation and other
                       future costs including nursing or attendant care beyond
@@ -292,7 +299,7 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       Housekeeping and Homemaking Services
                     </Typography>
@@ -301,7 +308,7 @@ const CarAccident = () => {
                     <Typography
                       color="primary-dark"
                       fontWeight="regular"
-                      customClassName="!text-[13px] leading-[1.8]"
+                      customClassName="text-md md:text-[21px] leading-[30px]"
                     >
                       Compensation for family members affected by your injuries
                       (for cost of services you provided and the loss of care,
@@ -316,14 +323,16 @@ const CarAccident = () => {
           <div className="space-y-3 pb-7">
             <Typography
               color="primary-dark"
-              customClassName="!text-title-l !font-regular my-5"
+              customClassName="text-title-l my-5"
+              fontWeight="medium"
             >
               Choosing the best car accident lawyer for your injury.
             </Typography>
 
             <Typography
               color="primary-dark"
-              customClassName="leading-[2] !font-regular mb-5"
+              customClassName="text-xl md:text-lg mb-5"
+              fontWeight="regular"
             >
               You need a personal injury lawyer that specializes in car
               accidents since this type of law is complex and is constantly
@@ -354,12 +363,16 @@ const CarAccident = () => {
         </div>
       </div>
 
-      <div className="mx-auto mb-20 flex max-w-7xl flex-col items-center justify-between md:flex-row">
-        <Typography customClassName="!text-[65px] px-2 !text-primary-dark text-center md:!text-[120px] !leading-[1.1]">
+      <div className="mx-auto mb-20 flex max-w-[1230px] flex-col items-center justify-between md:flex-row xl:max-w-7xl">
+        <Typography
+          customClassName="text-[65px] px-2 !text-primary-dark text-center md:!text-[120px] leading-[1]"
+          fontWeight="bold"
+        >
           Let us
           <Typography
             tag="span"
-            customClassName="!text-[65px] px-2 md:!text-[120px] !leading-[1.1]"
+            customClassName="text-[65px] px-2 md:!text-[120px]"
+            fontWeight="bold"
           >
             {" "}
             help
@@ -369,7 +382,7 @@ const CarAccident = () => {
 
         <ButtonSm
           text="Book a free consult"
-          customStyle="w-1/5 !uppercase font-medium"
+          customStyle="!w-[15%] font-bold text-sm"
         />
       </div>
     </section>
