@@ -35,9 +35,9 @@ const ReasonsToChoose = ({ reasons }) => {
 };
 
 const About = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="bg-primary-dark pb-10">
       <div className="flex h-screen flex-col items-center justify-center gap-28 overflow-hidden px-3 pt-20">
@@ -200,7 +200,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mx-auto my-36 flex max-w-7xl justify-between px-2 lg:px-0">
+      <div className="mx-auto my-20 flex max-w-7xl items-center px-2 lg:px-0 gap-20">
         <Typography customClassName="!text-[65px] px-2 !font-bold !text-white text-center md:!text-[130px] !leading-[1.1]">
           Let us{" "}
           <Typography
@@ -212,8 +212,8 @@ const About = () => {
           you.
         </Typography>
         <ButtonLg
-          text="Contact Us"
-          customStyle="!text-[10px] !uppercase !w-40 h-40 md:!text-sm hover:!border-white"
+          text="Book a free consult"
+          customStyle="!text-[10px] !uppercase max-w-[219px] h-10 md:!text-sm hover:!border-white"
         />
       </div>
     </section>
