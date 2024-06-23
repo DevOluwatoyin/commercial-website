@@ -2,11 +2,10 @@
 import Typography from "./Typography";
 import stars from "../assets/stars.svg";
 
-const CarouselItem = ({ detail, isVisible }) => {
+const CarouselItem = ({ detail }) => {
   return (
     <div
-      className={`carousel-item flex w-72 flex-shrink-0 items-center justify-center space-y-7 border border-primary-main p-5 md:h-96 md:w-96 ${isVisible ? "visible" : ""}`}
-      // style={{ order: isVisible ? -1 : "initial" }}
+      className={`carousel-item mr-4 flex items-center justify-center space-y-7 border border-primary-main p-5 md:h-96 md:w-96`}
     >
       <div>
         <div className="space-y-4">

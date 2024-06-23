@@ -1,11 +1,11 @@
 import { ButtonSm } from "./Button";
 import ArrowRight from "../assets/arrow-right.svg";
 import Typography from "./Typography";
-import Carousel from "./Carousel";
+import Carousel from "./Arosel";
 
 const Testimonies = () => {
   return (
-    <section className="mx-auto flex max-w-[1440px] flex-col justify-between gap-10 p-4 py-10 md:flex-row md:px-16 md:py-16   lg:w-[90%]">
+    <section className="mx-auto mb-10 flex max-w-[1440px] flex-col justify-between gap-10 px-4 py-10 md:flex-row md:py-16 lg:w-[90%]">
       <div className="md:w-[35%]">
         <Typography customClassName="uppercase font-bold !text-primary-light !text-[11px] !tracking-widest">
           What our clients are saying

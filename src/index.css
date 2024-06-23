@@ -22,23 +22,31 @@
   background-color: #1612127a;
 }
 
-.carousel-item {
-  opacity: 0.7;
-  transform: translateY(10px);
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
+.slick-slider {
+  width: 280px;
+  margin: 0 auto;
 }
-
-.carousel-item.visible {
-  opacity: 1;
-  transform: translateY(0);
-  order: -1;
-}
-
 
 @media screen and (min-width: 1400px) {
   .fluid-text {
     font-size: clamp(3rem, 26vw, 13rem);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slick-slider {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slick-slider {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .slick-slider {
+    width: 800px;
   }
 }

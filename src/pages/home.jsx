@@ -10,7 +10,6 @@ import Instruction from "../components/Instruction";
 import Testimonies from "../components/Testimonies";
 import Expectation from "../components/Expectation";
 import News from "../components/News";
-// import { FloatingBtn } from "../components/Button";
 
 const Home = () => {
   useEffect(() => {
